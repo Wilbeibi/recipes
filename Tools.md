@@ -12,6 +12,7 @@
 + <kbd>Ctrl</kbd> + <kbd>G</kbd>: go to line
 + <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>k</kbd> to delete current line
 + `"editor.minimap.enabled": false`: to disable minimap
++ [这就是我想要的 VSCode 插件！](https://zhuanlan.zhihu.com/p/36020180)
 
 ## psql
 + `\l` or `\list`: list all databases
