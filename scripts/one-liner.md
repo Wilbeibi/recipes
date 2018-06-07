@@ -23,3 +23,5 @@
     - `sed -n 12p` print 12th line, `sed -n 5, 30p` print liens 5-30. `-n` suppresses output so only `p`'s part gets printed 
     - `sed 5d` delete 5th line, `sed /foo/d` delete lines matching `/foo/`
     - `sed '/foo/a bar'` append 'bar' after lines containing 'foo'
+10. [awk](https://coolshell.cn/articles/9070.html): `docker ps | awk {'print $1'}` print first column container ID
+    - `$NF` for total number, last column
