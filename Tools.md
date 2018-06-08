@@ -57,6 +57,7 @@ stdout_logfile=/var/log/test1.log
 + Monodraw: ASCII diagram for illustration, banners
 + <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>⌃</kbd> + <kbd>4</kbd>: copy picture of selected area to the clipboard
 + `sshfs <user>@<host>:/remote/path /mount/point` to mount remote filesystem using SSH SFTP.
++ ![命令行自动切换英文输入法](https://i.imgur.com/XQvkiYI.png)
 
 ## ZSH
 + `cd /u/l/b`: path expansion
@@ -75,6 +76,19 @@ stdout_logfile=/var/log/test1.log
 + `git stash pop [--index] [<stash>]`: if not use parameter, recover the latest progress, and delete it from stash
 + `git stash apply [--index] [<stash>]`: same as pop, just not delete it.
 + `git stash clear`
+### Clean commits [ref](https://about.gitlab.com/2018/06/07/keeping-git-commit-history-clean/)
+#### Change most recent commit
++ `git add file_to_change.go`
++ `git commit --amend` to amend changes in stage to most recent commit
++ `git push --force-with-lease <remote_name> <branch_name>` to push (about [--force-with-lease](https://developer.atlassian.com/blog/2015/04/force-with-lease/))
+#### Change a specific commit
++ `git rebase -i <one commit before the one to modify>`, then in interactive editor, change first `pick <commit to modify> <description>` to `edit <commit to modify> <description>`
++ modify file_to_change.go, `git add file_to_change.go`
++ `git rebase --continue`
++ `git push --force-with-lease <remote_name> <branch_name>`
+#### Add, remove, or combine commits
++ `git rebase -i <commit>`
++ change `pick` to `squash`(keeps the commits messages in the description), `fixup`(forget the commit messages of the fixes and keep the original) or `drop`(delete that commit)
 
 ## Mise
 + [My Diigo Programming Notes](https://www.diigo.com/outliner/dzi0kh/Programming?key=a7q47wq9b2)
