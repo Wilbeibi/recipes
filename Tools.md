@@ -90,6 +90,9 @@ stdout_logfile=/var/log/test1.log
 #### Add, remove, or combine commits
 + `git rebase -i <commit>`
 + change `pick` to `squash`(keeps the commits messages in the description), `fixup`(forget the commit messages of the fixes and keep the original) or `drop`(delete that commit)
+### Delete branches [ref](https://stackoverflow.com/a/46412667/1035859)
++ `git push origin --delete <branch_name>`: delete remote branch
++ `git branch -D <branch>`: delete local branch
 
 ## Mise
 + [My Diigo Programming Notes](https://www.diigo.com/outliner/dzi0kh/Programming?key=a7q47wq9b2)

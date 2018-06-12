@@ -11,3 +11,6 @@
 + `replace "rsc.io/quote" v1.5.2 => "github.com/you/quote" v0.0.0-myfork`: replace package
 + `replace "rsc.io/quote" v1.5.2 => "../quote"`: replace with local directory
 + `vgo vendor`: put dependencies in vendor to comfort traditional `go build` person
+
+## My awesome go list
++ [viper](https://github.com/spf13/viper): Viper is a complete configuration solution for Go applications including 12-Factor apps. It is designed to work within an application, and can handle all types of configuration needs and formats
