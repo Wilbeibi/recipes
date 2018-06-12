@@ -1,3 +1,10 @@
+## Dockerfile tips
++ set timezone to UTC
+    ```
+    ENV TZ=UTC
+    RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+    ```
+
 ## Useful images
 1. Docker management UI: 
 ```
