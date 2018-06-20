@@ -93,6 +93,8 @@ stdout_logfile=/var/log/test1.log
 ### Delete branches [ref](https://stackoverflow.com/a/46412667/1035859)
 + `git push origin --delete <branch_name>`: delete remote branch
 + `git branch -D <branch>`: delete local branch
+### config per repository [ref](https://stackoverflow.com/questions/18181439/git-different-config-for-different-repository)
+
 
 ## Mise
 + [My Diigo Programming Notes](https://www.diigo.com/outliner/dzi0kh/Programming?key=a7q47wq9b2)
