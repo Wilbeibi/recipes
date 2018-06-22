@@ -10,4 +10,8 @@
   in the form `$SVC.$NAMESPACE.svc.cluster.local` [ref](http://kubernetesbyexample.com/sd/):
     - ping: `kubectl exec jumpod -c shell -i -t -- ping thesvc.default.svc.cluster.local` (non default namespace also works)
     - curl: `kubectl exec jumpod -c shell -i -t -- curl http://thesvc/info`
+    - nslookup mysql service: `kubectl exec -ti $POD_NAME -- nslookup mysql`
 + Check environment variable: `kubectl exec <pod_name> -- printenv`
+## Helm
++ `helm template`: locally render templates
++ `helm list | grep FAILED | awk '{print $1}' | xargs -L1 helm delete`: delete all failed releases
