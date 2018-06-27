@@ -2,6 +2,15 @@
 ## Libraries
 + [Jaeger](https://github.com/jaegertracing/jaeger): tracing
 + [kops](https://github.com/kubernetes/kops): k8s install/upgrade/management
+
+## Tools
++ [Weave Scope](https://www.weave.works/docs/scope/latest/installing/#k8s), a tool to visualize and debug k8s
+  - install `kubectl apply -f "https://cloud.weave.works/k8s/scope.yaml?k8s-version=$(kubectl version | base64 | tr -d '\n')"`
+  - open scope in browser `kubectl port-forward -n weave "$(kubectl get -n weave pod --selector=weave-scope-component=app -o jsonpath='{.items..metadata.name}')" 4040`
++ [kail: k8s log viewer](https://github.com/boz/kail)
+  - install `brew tap boz/repo;brew install boz/repo/kail`
+  - [usage](https://github.com/boz/kail#usage): `kail --svc frontend --deploy webapp --log-level debug --ns monitoring`
+
 ## [kubectl tips and tricks](https://discuss.kubernetes.io/t/kubectl-tips-and-tricks/192/7)
 + `kubectl alpha diff --help`: analyzes two kubernetes resources and prints the lines that are different.
 + `kubectl get pods --watch`: watch pod status
