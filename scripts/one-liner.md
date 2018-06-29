@@ -31,3 +31,4 @@
     - `less +F` follow updates, `less +G` start 20% into file, `less +/foo` search for 'foo'
 12. `fc`: fix command, open the last command you ran in an editor, and rerun
 13. `date -u`: show UTC time now
+14. `set -x` enables a mode of the shell where all executed commands are printed to the terminal
