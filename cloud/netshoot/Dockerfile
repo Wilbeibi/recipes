@@ -1,6 +1,10 @@
 FROM alpine:3.7
 
-RUN apk add --no-cache \
+RUN set -ex \
+    && apk update \
+    && apk add --no-cache \
+    bash \
+    git \
     tcpdump \
     bind-tools \
     netcat-openbsd \
@@ -11,4 +15,4 @@ RUN apk add --no-cache \
     vim 
 
 RUN mv /usr/sbin/tcpdump /usr/bin/tcpdump
-ENTRYPOINT [ "/bin/bash" ]
+ENTRYPOINT ["/bin/bash" ]

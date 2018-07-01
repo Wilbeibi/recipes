@@ -1,3 +1,4 @@
+## Tips 
 1. `git ls-files | xargs cloc`: Count lines of code in git repo
 2. `twistd -n ftp -r ./`: FTP server on port 2121
 3. `watch -n 0 <command>`: run any command every 0.1s
@@ -32,3 +33,6 @@
 12. `fc`: fix command, open the last command you ran in an editor, and rerun
 13. `date -u`: show UTC time now
 14. `set -x` enables a mode of the shell where all executed commands are printed to the terminal
+
+## References
++ [Advanced Bash-Scripting Guide](https://www.tldp.org/LDP/abs/abs-guide.pdf)

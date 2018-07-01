@@ -27,4 +27,5 @@
 + **Nodeport**: Node port is the port on which the service can be accessed from external users using Kube-Proxy
 ## Helm
 + `helm template`: locally render templates
++ `helm install --dry-run --debug <char_dir>`: check the generated manifests
 + `helm list | grep FAILED | awk '{print $1}' | xargs -L1 helm delete`: delete all failed releases

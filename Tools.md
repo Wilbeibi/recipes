@@ -13,6 +13,10 @@
 + <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>k</kbd> to delete current line
 + `"editor.minimap.enabled": false`: to disable minimap
 + [这就是我想要的 VSCode 插件！](https://zhuanlan.zhihu.com/p/36020180)
+### CLI
++ `code .` : Open the current folder in a new window
++ `code -r .` : Open the current folder in the current window
++ `code -a .` : Add the current folder to the current window
 
 ## psql
 + `\l` or `\list`: list all databases
@@ -58,6 +62,7 @@ stdout_logfile=/var/log/test1.log
 + <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>⌃</kbd> + <kbd>4</kbd>: copy picture of selected area to the clipboard
 + `sshfs <user>@<host>:/remote/path /mount/point` to mount remote filesystem using SSH SFTP.
 + ![命令行自动切换英文输入法](https://i.imgur.com/XQvkiYI.png)
++ Briss: pdf chop tool
 
 ## ZSH
 + `cd /u/l/b`: path expansion

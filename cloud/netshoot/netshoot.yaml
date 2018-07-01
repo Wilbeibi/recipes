@@ -1,10 +1,14 @@
+# Usage:
+# kubectl exec netshoot -i -t -- ping <IP>
+# kubectl exec netshoot -i -t -- nslookup <domain name>
 apiVersion: v1
 kind: Pod
 metadata:
   name: netshoot
 spec:
   containers:
-  - name: netshoot 
-    image: wilbeibi/netshoot:v0.1 
+  - name: netshoot
+    image: wilbeibi/netshoot:v0.2
     command:
-      - "sleep 10000"
+      - sleep
+      - "10000"
