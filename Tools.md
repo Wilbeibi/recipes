@@ -94,10 +94,11 @@ stdout_logfile=/var/log/test1.log
 + `git push origin --delete <branch_name>`: delete remote branch
 + `git branch -D <branch>`: delete local branch
 ### config per repository [ref](https://stackoverflow.com/questions/18181439/git-different-config-for-different-repository)
-
+### Change commit author `git commit --amend --author="Author Name <email@address.com>"`
 
 ## Mise
 + [My Diigo Programming Notes](https://www.diigo.com/outliner/dzi0kh/Programming?key=a7q47wq9b2)
 + [LaTex cheat sheet](https://wch.github.io/latexsheet/)
 + Debug Chrome CPU hogging: Invoke `Chrome Menu / More Tools / Task Manager` to see what consumes CPU
 + <kbd>Fn</kbd> + <kbd>Q</kbd> to bluetooth pairing HHKB to Mac
++ `neofetch` to show system info

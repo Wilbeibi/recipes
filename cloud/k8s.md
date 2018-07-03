@@ -21,6 +21,10 @@
     - curl: `kubectl exec jumpod -c shell -i -t -- curl http://thesvc/info`
     - nslookup mysql service: `kubectl exec -ti $POD_NAME -- nslookup mysql`
 + Check environment variable: `kubectl exec <pod_name> -- printenv`
+### Port, Target Port and Nodeport [ref](https://vitalflux.com/kubernetes-port-targetport-and-nodeport/):
++ **Port**: Port is the port number which makes a service visible to other services running within the same K8s cluster.  In other words, in case a service wants to invoke another service running within the same Kubernetes cluster, it will be able to do so using port specified against “port” in the service spec file.
++ **Target Port**: Target port is the port on the POD where the service is running.
++ **Nodeport**: Node port is the port on which the service can be accessed from external users using Kube-Proxy
 ## Helm
 + `helm template`: locally render templates
 + `helm list | grep FAILED | awk '{print $1}' | xargs -L1 helm delete`: delete all failed releases
