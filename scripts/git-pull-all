@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+""" Recursively pull git repos
+"""
+import os
+from subprocess import Popen, PIPE
+from multiprocessing import Pool
+
+GIT = "/usr/local/bin/git"
+
+
+def get_repos(root_dir):
+    for dirname, dirnames, filenames in os.walk(root_dir):
+        for subdirname in dirnames:
+            if ".git" == subdirname:
+                git_path = os.path.abspath(dirname) + "/.git"
+                command = f"{GIT} --git-dir={git_path} pull"
+                yield command
+
+
+def exec_cmd(command):
+    print(command)
+    proc = Popen([command], stdout=PIPE, shell=True)
+    output = proc.communicate()[0]
+    print(output.decode())
+    print('\n')
+
+
+def pull_all():
+    pool = Pool(5)
+    pool.map(exec_cmd, get_repos("."))
+    pool.close()
+    pool.join()
+
+
+if __name__ == '__main__':
+    pull_all()
