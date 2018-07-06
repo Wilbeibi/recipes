@@ -53,7 +53,7 @@ stdout_logfile=/var/log/test1.log
 + `dash python3: os.path`
 
 ## Emoji
-🛢️ 📰 💾 🖥️ 📱 💣 🚚 🚢 🗿 🚀 🏄 🔧 ☕️ 🦊
+🛢️ 📰 💾 🖥️ 📱 💣 🚚 🚢 🗿 🚀 🏄 🔧 ☕️ 🦊 🌊
 
 ## Mac tools
 + mac2imgur
@@ -62,19 +62,20 @@ stdout_logfile=/var/log/test1.log
 + <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>⌃</kbd> + <kbd>4</kbd>: copy picture of selected area to the clipboard
 + `sshfs <user>@<host>:/remote/path /mount/point` to mount remote filesystem using SSH SFTP.
 + ![命令行自动切换英文输入法](https://i.imgur.com/XQvkiYI.png)
-+ Briss: pdf chop tool
++ Briss2: pdf chop tool
 
 ## ZSH
 + `cd /u/l/b`: path expansion
 + `cd site1 site2`: path replacement, if you were in /srv/www/site1/current/log, it will go to /srv/www/site2/current/log via this command
-+ `ls -l **/*.log`: extened globbing, **/ = recursive
++ `ls -l **/*.log`: extended globbing, **/ = recursive
 + `zmv '(*).txt' 'template_$1.html'`: rename files
-+ `ls -l zsh_demo/**/*(. Lm-2 mh-1 om)`: ls files under zsh_demo recursively, `Lm-2` for less than 2mb (similarly, `Lm+30` for over 30mb, m for megabytes, k for kilobytes, or nothing for just bytes), `mh-1` for files modified in the last hour (M for Months, w for weeks, h for hours, m for minutes, and s for seconds), `om` to o(rder) by modification date, o for most recent, O vise vesa, m for modifcaion date, or L to sort by size.
++ `ls -l zsh_demo/**/*(. Lm-2 mh-1 om)`: ls files under zsh_demo recursively, `Lm-2` for less than 2mb (similarly, `Lm+30` for over 30mb, m for megabytes, k for kilobytes, or nothing for just bytes), `mh-1` for files modified in the last hour (M for Months, w for weeks, h for hours, m for minutes, and s for seconds), `om` to o(rder) by modification date, o for most recent, O vise versa, m for modification date, or L to sort by size.
 + <kbd>Ctrl</kbd> + <kbd>X</kbd> + <kbd>Ctrl</kbd> + <kbd>E</kbd>  to edit long command
 + [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md), → to complete
 
 + [Master Your Z Shell with These Outrageously Useful Tips](http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/)
-
++ `sh -c "$(wget https://example.com/execute.sh -0 -)"`: download and execute command
++ theme: spaceship, font: 14pt Fira Mono for Powerline
 ## Git
 ### Stash [ref](https://gist.github.com/subchen/3409a16cb46327ca7691)
 + `git stash save "message..."`: Save current work progress, staged/unstaged
@@ -99,7 +100,11 @@ stdout_logfile=/var/log/test1.log
 + `git push origin --delete <branch_name>`: delete remote branch
 + `git branch -D <branch>`: delete local branch
 ### config per repository [ref](https://stackoverflow.com/questions/18181439/git-different-config-for-different-repository)
-### Change commit author `git commit --amend --author="Author Name <email@address.com>"`
+### Change commit author
++ `git commit --amend --author="Author Name <email@address.com>"`
+### git gc
++ `git gc --aggressive` to compress repo.
+
 
 ## Mise
 + [My Diigo Programming Notes](https://www.diigo.com/outliner/dzi0kh/Programming?key=a7q47wq9b2)

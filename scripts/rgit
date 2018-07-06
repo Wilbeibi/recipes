@@ -38,7 +38,8 @@ def do_all(git_cmd):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) != 2 or sys.argv[1] not in ("pull", "gc"):
+    if len(sys.argv) < 2 or sys.argv[1] not in ("pull", "gc"):
         print("Usage : rgit <cmd>")
         sys.exit(1)
-    do_all(sys.argv[1])
+    cmd = " ".join(sys.argv[1:])
+    do_all(cmd)
