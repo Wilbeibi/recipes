@@ -35,5 +35,20 @@ docker run \
 --volume /tmp/sourcegraph/data:/var/opt/sourcegraph \
 sourcegraph/server
 ```
+
+3. [FreshRSS](https://github.com/FreshRSS/FreshRSS/tree/master/Docker#run-freshrss):
+```
+# You can optionally run from the directory containing the FreshRSS source code:
+cd ./FreshRSS/
+
+# The data will be saved on the host in `./data/`
+mkdir -p ./data/
+
+sudo docker run -d --restart unless-stopped --log-opt max-size=10m \
+  -v $(pwd)/data:/var/www/FreshRSS/data \
+  -e 'CRON_MIN=5,35' \
+  -p 8080:80 \
+  --name freshrss freshrss/freshrss
+```
 ### Go/Docker Makefile template
 + https://github.com/thockin/go-build-template

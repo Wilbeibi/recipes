@@ -18,15 +18,22 @@
     - ping: `kubectl exec jumpod -c shell -i -t -- ping thesvc.default.svc.cluster.local` (non default namespace also works)
     - curl: `kubectl exec jumpod -c shell -i -t -- curl http://thesvc/info`
     - nslookup mysql service: `kubectl exec -ti $POD_NAME -- nslookup mysql`
++ `kubectl config get-contexts`: check k8s contexts
++ `kubectl config use-context docker-for-desktop`: choose k8s context
 + Check environment variable: `kubectl exec <pod_name> -- printenv`
 + `kubectl --dry-run blabla -o yaml`: generate manifests to stdout
 + `kubectl get deplyment -o yaml`
 + `kubectl port-forward svc/foo-svc 5000`: expose a in-cluster service
++ Zombie processes [issue](https://github.com/helm/charts/issues/2989#issuecomment-351053778): for deployment like rabbitmq, it's health check/liveness probe will create many zombie processes. This happens on older version k8s. To solve it, kubelet add `--pod-infra-container-image=gcr.io/google_containers/pause-amd64:3.1` to use newer pause container to reap zombies. Thank you [almighty pause container](https://www.ianlewis.org/en/almighty-pause-container)
++ `kubectl cluster-info dump`: to debug and diagnose cluster problems
+
 ### Port, Target Port and Nodeport [ref](https://vitalflux.com/kubernetes-port-targetport-and-nodeport/):
 + **Port**: Port is the port number which makes a service visible to other services running within the same K8s cluster.  In other words, in case a service wants to invoke another service running within the same Kubernetes cluster, it will be able to do so using port specified against “port” in the service spec file.
 + **Target Port**: Target port is the port on the POD where the service is running.
 + **Nodeport**: Node port is the port on which the service can be accessed from external users using kube-proxy
 
+# Kubernetes Tips and Hacks
++ Zombie processes [issue](https://github.com/helm/charts/issues/2989#issuecomment-351053778): for deployment like rabbitmq, it's health check/liveness probe will create many zombie processes. This happens on older version k8s. To solve it, kubelet add `--pod-infra-container-image=gcr.io/google_containers/pause-amd64:3.1` to use newer pause container to reap zombies. Thank you [almighty pause container](https://www.ianlewis.org/en/almighty-pause-container)
 
 ## Helm
 + `helm template`: locally render templates

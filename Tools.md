@@ -24,11 +24,12 @@
 + `\q`: disconnect
 + `\conninfo`
 + `\dt`: describe tables
-+ `\d table_name`: describle table schema, `\d+` for more
++ `\d table_name`: describe table schema, `\d+` for more
 + `\dF`: describe full text flag, `dF+` for more detailed info
 
 ## mysql
-+ `SHOW [FULL] PROCESSLIST;`: usefull commands to show running threads and connections  
++ `SHOW [FULL] PROCESSLIST;`: useful commands to show running threads and connections
++ In MySQL, use "utf8mb4" (real utf-8) instead of "utf8"
 
 ## sqlite3
 + `.schema`: Print the database structure
@@ -58,12 +59,11 @@ stdout_logfile=/var/log/test1.log
 ## Mac tools
 + mac2imgur
 + Mac 10.12 不允许第三方来源的app安装了，要`sudo spctl --master-disable`
-+ Monodraw: ASCII diagram for illustration, banners
-+ <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>⌃</kbd> + <kbd>4</kbd>: copy picture of selected area to the clipboard
++ [Monodraw](https://monodraw.helftone.com/): ASCII diagram for illustration, banners
++ <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>4</kbd>: copy picture of selected area(screenshot) to the clipboard
 + `sshfs <user>@<host>:/remote/path /mount/point` to mount remote filesystem using SSH SFTP.
 + ![命令行自动切换英文输入法](https://i.imgur.com/XQvkiYI.png)
 + Briss2: pdf chop tool
-
 ## ZSH
 + `cd /u/l/b`: path expansion
 + `cd site1 site2`: path replacement, if you were in /srv/www/site1/current/log, it will go to /srv/www/site2/current/log via this command
@@ -75,6 +75,7 @@ stdout_logfile=/var/log/test1.log
 
 + [Master Your Z Shell with These Outrageously Useful Tips](http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/)
 + `sh -c "$(wget https://example.com/execute.sh -0 -)"`: download and execute command
++ <kbd>⌘</kbd> + <kbd>.</kbd>: recall the last argument of any of the previous commands
 + theme: spaceship, font: 14pt Fira Mono for Powerline
 ## Git
 ### Stash [ref](https://gist.github.com/subchen/3409a16cb46327ca7691)

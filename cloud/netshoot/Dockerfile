@@ -15,4 +15,4 @@ RUN set -ex \
     vim 
 
 RUN mv /usr/sbin/tcpdump /usr/bin/tcpdump
-ENTRYPOINT ["/bin/bash" ]
+ENTRYPOINT ["sh" ]
