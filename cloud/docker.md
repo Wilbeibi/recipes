@@ -5,6 +5,7 @@
     RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
     ```
 + `docker -p <dest_port>:<container_port>`
++ `docker images --digests` show docker image sha256
 
 ## Useful images
 1. Docker management UI: 

@@ -26,13 +26,14 @@
     - `sed '/foo/a bar'` append 'bar' after lines containing 'foo'
 10. [awk](https://coolshell.cn/articles/9070.html): `docker ps | awk {'print $1'}` print first column container ID
     - `$NF` for total number, last column
-11. [less](https://twitter.com/b0rk/status/1005470181240508417): '/' search, 'n/N' next/prev match, 'j/K' down/up a line, 'g/G' begining/end of file
+11. [less](https://twitter.com/b0rk/status/1005470181240508417): '/' search, 'n/N' next/prev match, 'j/K' down/up a line, 
+    'g/G' begining/end of file
     - `less -r` display bash esxape codes as colors
     - `v` to edit file, `F` to keep reading as updated
     - `less +F` follow updates, `less +G` start 20% into file, `less +/foo` search for 'foo'
 12. `fc`: fix command, open the last command you ran in an editor, and rerun
 13. `date -u`: show UTC time now
 14. `set -x` enables a mode of the shell where all executed commands are printed to the terminal
-
+15. `jq`: 'fromjson' to unescape, 'tojson' to escape when parsing
 ## References
 + [Advanced Bash-Scripting Guide](https://www.tldp.org/LDP/abs/abs-guide.pdf)

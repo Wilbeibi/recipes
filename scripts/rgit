@@ -18,20 +18,20 @@ def get_repos(root_dir, git_cmd):
         for subdirname in dirnames:
             if ".git" == subdirname:
                 git_path = os.path.abspath(dirname) + "/.git"
-                command = f"{GIT} --git-dir={git_path} {git_cmd}"
+                command = f"{GIT} --git-dir={git_path} --work-tree={git_path} {git_cmd}"
                 yield command
 
 
 def exec_cmd(command):
-    print(command)
     proc = Popen([command], stdout=PIPE, shell=True)
     output = proc.communicate()[0]
-    print(output.decode())
+    print(command)
+    print(output.decode(), flush=True)
     print('\n')
 
 
 def do_all(git_cmd):
-    pool = Pool(5)
+    pool = Pool(3)
     pool.map(exec_cmd, get_repos(".", git_cmd))
     pool.close()
     pool.join()
