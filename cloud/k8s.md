@@ -32,9 +32,6 @@
 + **Target Port**: Target port is the port on the POD where the service is running.
 + **Nodeport**: Node port is the port on which the service can be accessed from external users using kube-proxy
 
-# Kubernetes Tips and Hacks
-+ Zombie processes [issue](https://github.com/helm/charts/issues/2989#issuecomment-351053778): for deployment like rabbitmq, it's health check/liveness probe will create many zombie processes. This happens on older version k8s. To solve it, kubelet add `--pod-infra-container-image=gcr.io/google_containers/pause-amd64:3.1` to use newer pause container to reap zombies. Thank you [almighty pause container](https://www.ianlewis.org/en/almighty-pause-container)
-
 ## Helm
 + `helm template`: locally render templates
 + `helm install --dry-run --debug <char_dir>`: check the generated manifests

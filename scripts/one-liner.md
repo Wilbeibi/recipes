@@ -1,6 +1,6 @@
 ## Tips 
 1. `git ls-files | xargs cloc`: Count lines of code in git repo
-2. `twistd -n ftp -r ./`: FTP server on port 2121
+2. `twistd -n ftp -r ./`: FTP server on port 2121; `twistd -n web -p 8080 --path .`: web server on port 8080 (`twistd -n -h` for more services like ssh, dns, mail, socks)
 3. `watch -n 0 <command>`: run any command every 0.1s
 4. `rsync -abviuzP src/ dest/` from https://superuser.com/a/547316/173890
     - `-i` turns on the itemized format, which shows more information than the default format
@@ -35,5 +35,6 @@
 13. `date -u`: show UTC time now
 14. `set -x` enables a mode of the shell where all executed commands are printed to the terminal
 15. `jq`: 'fromjson' to unescape, 'tojson' to escape when parsing
+16. `MY_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)` [refer](https://unix.stackexchange.com/a/81699/36211)
 ## References
 + [Advanced Bash-Scripting Guide](https://www.tldp.org/LDP/abs/abs-guide.pdf)

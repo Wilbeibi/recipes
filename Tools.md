@@ -105,6 +105,8 @@ stdout_logfile=/var/log/test1.log
 + `git commit --amend --author="Author Name <email@address.com>"`
 ### git gc
 + `git gc --aggressive` to compress repo.
+### store credentials
++ `git config credential.helper store` to avoid keep been asked for username and password
 
 
 ## Mise
