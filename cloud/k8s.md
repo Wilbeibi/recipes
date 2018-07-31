@@ -26,13 +26,22 @@
 + `kubectl port-forward svc/foo-svc 5000`: expose a in-cluster service
 + Zombie processes [issue](https://github.com/helm/charts/issues/2989#issuecomment-351053778): for deployment like rabbitmq, it's health check/liveness probe will create many zombie processes. This happens on older version k8s. To solve it, kubelet add `--pod-infra-container-image=gcr.io/google_containers/pause-amd64:3.1` to use newer pause container to reap zombies. Thank you [almighty pause container](https://www.ianlewis.org/en/almighty-pause-container)
 + `kubectl cluster-info dump`: to debug and diagnose cluster problems
-
++ `kubectl get pods | grep Evicted | awk '{print $1}' | xargs kubectl delete pod`: Delete evicted pods
++ Accessing pod metadata [ref](https://github.com/luksa/kubernetes-in-action/blob/master/Chapter08/downward-api-env.yaml)
++ `kubectl api-versions`: Find api versions cluster support.
++ Debugging pod: `kubectl describe pod <pod-id>`, `kubectl get pods -o wide`
++ `kubectl exec POD_NAME -c CONTAINER_NAME reboot`: rebbot specific container of pod
 ### Port, Target Port and Nodeport [ref](https://vitalflux.com/kubernetes-port-targetport-and-nodeport/):
 + **Port**: Port is the port number which makes a service visible to other services running within the same K8s cluster.  In other words, in case a service wants to invoke another service running within the same Kubernetes cluster, it will be able to do so using port specified against “port” in the service spec file.
 + **Target Port**: Target port is the port on the POD where the service is running.
 + **Nodeport**: Node port is the port on which the service can be accessed from external users using kube-proxy
-
++
 ## Helm
 + `helm template`: locally render templates
 + `helm install --dry-run --debug <char_dir>`: check the generated manifests
 + `helm list | grep FAILED | awk '{print $1}' | xargs -L1 helm delete`: delete all failed releases
++ [stable/rabbimq/templates/svc.yaml](https://github.com/helm/charts/blob/master/stable/rabbitmq/templates/svc.yaml)
++ [test-vault-status.yaml](https://github.com/banzaicloud/banzai-charts/blob/master/vault/templates/tests/test-vault-status.yaml)
+
+## k8s recipes
++ init container (TODO: local repo)

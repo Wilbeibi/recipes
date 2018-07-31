@@ -16,6 +16,8 @@
 + `docker inspect ebdb795dc32d | jq '.[0]' | jq keys`: show all keys
 + `docker inspect ebdb795dc32d | jq '.[0]' | jq .NetworkSettings`: show values for
     a specific key (or ` jq -r '.[0].NetworkSettings.IPAddress'`)
+## net libc issue
++ when `CGO_ENABLED=0`, and use `net` in code, may have issue, that's because libc missing, add `RUN apk add --no-cache libc6-compat`
 
 
 ## Useful images

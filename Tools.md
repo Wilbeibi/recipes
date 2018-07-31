@@ -3,7 +3,7 @@
 + Dash: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>
 
 ## VSCode
-+ <kbd>Ctrl</kbd> + <kbd>Tab</kbd> to switch tabs
++ <kbd>Ctrl</kbd> + <kbd>Tab</kbd> to switch tabs, <kbd>⌘</kbd> + <kbd>Tab</kbd> + LEFT/RIGHT
 + Multiple cursor: <kbd>Alt</kbd> + <kbd>Shift</kbd> + mouse click
     - <kbd>⌘</kbd> + <kbd>Opt</kbd> + <kbd>Shift</kbd> + Up/Down to select multiple lines
 + <kbd>⌘</kbd> + Up/Down to go to head/end of file
@@ -77,6 +77,8 @@ stdout_logfile=/var/log/test1.log
 + `sh -c "$(wget https://example.com/execute.sh -0 -)"`: download and execute command
 + <kbd>⌘</kbd> + <kbd>.</kbd>: recall the last argument of any of the previous commands
 + theme: spaceship, font: 14pt Fira Mono for Powerline
+## iTerm2
++ [delete world/line in iTerm2](https://coderwall.com/p/ds2dha/word-line-deletion-and-navigation-shortcuts-in-iterm2): deleting a word: 0x17, deleting a line: 0x15
 ## Git
 ### Stash [ref](https://gist.github.com/subchen/3409a16cb46327ca7691)
 + `git stash save "message..."`: Save current work progress, staged/unstaged

@@ -36,5 +36,18 @@
 14. `set -x` enables a mode of the shell where all executed commands are printed to the terminal
 15. `jq`: 'fromjson' to unescape, 'tojson' to escape when parsing
 16. `MY_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)` [refer](https://unix.stackexchange.com/a/81699/36211)
+17. `&&` in bash is "AND", statement to the left as well as right of `&&` should be run in sequence, `&` means preceding commands, 
+    to the immediate left of the `&`, should simply run in the background
+18. `rg -F -e` to search literal string
+
+=======
+### ripgrep
+- `rg -F -e` to search literal string
+- `rg -t go <keyword> -g '!vendor'`: only search in go files, ignore path contains vendor
+- `rg fast README.md --replace FAST`:  replace all occurrences of `fast` with `FAST`
+- `rg 'type((\s\w+\s)+)interface' -g '!vendor'`: find all interface definitions
+- `rg -z/--search-zip`: search compressed files
+- [Add custom type](https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md#configuration-file): --type-add web:\*.{html,css,js}\*
+
 ## References
 + [Advanced Bash-Scripting Guide](https://www.tldp.org/LDP/abs/abs-guide.pdf)
