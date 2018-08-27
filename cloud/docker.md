@@ -19,6 +19,8 @@
 ## net libc issue
 + when `CGO_ENABLED=0`, and use `net` in code, may have issue, that's because libc missing, add `RUN apk add --no-cache libc6-compat`
 
+## [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/#use-multi-stage-builds)
++ [bank-vault example](https://github.com/banzaicloud/bank-vaults/blob/master/Dockerfile)
 
 ## Useful images
 1. Docker management UI:
