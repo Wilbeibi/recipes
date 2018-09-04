@@ -1,0 +1,11 @@
+# Config DNS for cluster
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kube-dns
+  namespace: kube-system
+data:
+  stubDomains: |
+    {"acme.local": ["1.2.3.4"]} # for specific domains
+  upstreamNameservers: |
+    ["8.8.8.8", "8.8.4.4"]
