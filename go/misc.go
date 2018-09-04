@@ -5,6 +5,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"runtime"
 	"strings"
 )
 
@@ -26,4 +27,9 @@ func splitAndFields() {
 	// Notice, it's ' ', because c is rune, not string, line 24 use " ", has to be string
 	f := func(c rune) bool { return c == ',' || c == ' ' }
 	fmt.Printf("%q\n", strings.FieldsFunc(" Hello, hello, world", f))
+}
+
+func printVersion() {
+	fmt.Printf("Go Version: %s", runtime.Version())
+	fmt.Printf("Go OS/Arch: %s/%s", runtime.GOOS, runtime.GOARCH)
 }
