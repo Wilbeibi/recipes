@@ -10,7 +10,7 @@
   - [usage](https://github.com/boz/kail#usage): `kail --svc frontend --deploy webapp --log-level debug --ns monitoring`
 + [Telepresence](https://github.com/telepresenceio/telepresence): Local development against a remote Kubernetes
 + ~~[draft](https://github.com/Azure/draft)~~: steamlined k8s deployment, automate building, pushing image, applying manifests (Cannot use your own Dockerfile/yaml file!)
-+ [squash](https://github.com/solo-io/squash): The debugger for microservices
++ [squash](https://github.com/solo-io/squash): The debugger for micro-services
 + [VSCode Kubernetes Tools](https://github.com/Azure/vscode-kubernetes-tools)
 + ⭐️ [Skaffold](https://github.com/GoogleContainerTools/skaffold): watching changes and build/push images, apply k8s manifests
   - [skaffold.yaml explained](https://github.com/GoogleContainerTools/skaffold/blob/master/examples/annotated-skaffold.yaml)
@@ -36,7 +36,8 @@
 + Accessing pod metadata [ref](https://github.com/luksa/kubernetes-in-action/blob/master/Chapter08/downward-api-env.yaml)
 + `kubectl api-versions`: Find api versions cluster support.
 + Debugging pod: `kubectl describe pod <pod-id>`, `kubectl get pods -o wide`
-+ `kubectl exec POD_NAME -c CONTAINER_NAME reboot`: rebbot specific container of pod
++ `kubectl exec POD_NAME -c CONTAINER_NAME reboot`: reboot specific container of pod
+
 ### Port, Target Port and Nodeport [ref](https://vitalflux.com/kubernetes-port-targetport-and-nodeport/):
 + **Port**: Port is the port number which makes a service visible to other services running within the same K8s cluster.  In other words, in case a service wants to invoke another service running within the same Kubernetes cluster, it will be able to do so using port specified against “port” in the service spec file.
 + **Target Port**: Target port is the port on the POD where the service is running.
