@@ -9,9 +9,12 @@
   - install `brew tap boz/repo;brew install boz/repo/kail`
   - [usage](https://github.com/boz/kail#usage): `kail --svc frontend --deploy webapp --log-level debug --ns monitoring`
 + [Telepresence](https://github.com/telepresenceio/telepresence): Local development against a remote Kubernetes
++ ~~[draft](https://github.com/Azure/draft)~~: steamlined k8s deployment, automate building, pushing image, applying manifests (Cannot use your own Dockerfile/yaml file!)
 + [squash](https://github.com/solo-io/squash): The debugger for microservices
 + [VSCode Kubernetes Tools](https://github.com/Azure/vscode-kubernetes-tools)
-+ [draft](https://github.com/Azure/draft): steamlined k8s deployment, automate building, pushing image, applying yaml
++ ⭐️ [Skaffold](https://github.com/GoogleContainerTools/skaffold): watching changes and build/push images, apply k8s manifests
+  - [skaffold.yaml explained](https://github.com/GoogleContainerTools/skaffold/blob/master/examples/annotated-skaffold.yaml)
+
 ## [kubectl tips and tricks](https://discuss.kubernetes.io/t/kubectl-tips-and-tricks/192/7)
 + `kubectl alpha diff --help`: analyzes two kubernetes resources and prints the lines that are different.
 + `kubectl get pods --watch`: watch pod status

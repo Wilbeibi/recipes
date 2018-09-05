@@ -1,0 +1,15 @@
+apiVersion: skaffold/v1alpha2
+kind: Config
+build:
+  tagPolicy:
+    sha256: {}
+  artifacts:
+  - imageName: wilbeibi/server_demo
+    workspace: .
+  local:
+    skipPush: false
+    useDockerCLI: true
+deploy:
+  kubectl:
+    manifests:
+    - serverpod.yaml
