@@ -1,5 +1,5 @@
 # Golang Notes
-## vgo [ref](https://zhuanlan.zhihu.com/p/33926171)
+## vgo [ref](https://zhuanlan.zhihu.com/p/33926171) (TODO: deprecated, called go module now)
 + touch go.mod; vgo build
 + `vgo list -m`: check all dependencies
 + `vgo list -m -u`: check all dependencies and update
@@ -11,6 +11,9 @@
 + `replace "rsc.io/quote" v1.5.2 => "github.com/you/quote" v0.0.0-myfork`: replace package
 + `replace "rsc.io/quote" v1.5.2 => "../quote"`: replace with local directory
 + `vgo vendor`: put dependencies in vendor to comfort traditional `go build` person
+
+## Mise
++ [variadic parameter in interface](https://github.com/go-kit/kit/blob/master/metrics/metrics.go)
 
 ## My awesome go list
 + [viper](https://github.com/spf13/viper): Viper is a complete configuration solution for Go applications including 12-Factor apps. It is designed to work within an application, and can handle all types of configuration needs and formats

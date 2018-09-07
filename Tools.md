@@ -64,6 +64,7 @@ stdout_logfile=/var/log/test1.log
 + `sshfs <user>@<host>:/remote/path /mount/point` to mount remote filesystem using SSH SFTP.
 + ![命令行自动切换英文输入法](https://i.imgur.com/XQvkiYI.png)
 + Briss2: pdf chop tool
++ `brew switch <formula> <version>`
 ## ZSH
 + `cd /u/l/b`: path expansion
 + `cd site1 site2`: path replacement, if you were in /srv/www/site1/current/log, it will go to /srv/www/site2/current/log via this command

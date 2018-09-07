@@ -1,4 +1,5 @@
 # Config DNS for cluster
+# https://kubernetes.io/docs/tasks/administer-cluster/dns-custom-nameservers/
 apiVersion: v1
 kind: ConfigMap
 metadata:

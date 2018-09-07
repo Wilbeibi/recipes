@@ -11,7 +11,7 @@
     - In case docker warning config.json [permission denied](https://askubuntu.com/questions/747778/docker-warning-config-json-permission-denied):
         - `sudo chown "$USER":"$USER" /home/"$USER"/.docker -R`
         - `sudo chmod g+rwx "/home/$USER/.docker" -R`
-
++ `docker build --rm`, remove intermediate containers after a successful build, should be default behavior
 ## docker inspect with jq
 + `docker inspect ebdb795dc32d | jq '.[0]' | jq keys`: show all keys
 + `docker inspect ebdb795dc32d | jq '.[0]' | jq .NetworkSettings`: show values for
