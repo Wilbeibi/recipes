@@ -110,6 +110,8 @@ stdout_logfile=/var/log/test1.log
 + `git gc --aggressive` to compress repo.
 ### store credentials
 + `git config credential.helper store` to avoid keep been asked for username and password
+### git console show non-ascii path name
++ `git config --global core.quotepath off`, [refer](https://stackoverflow.com/a/22828826/1035859)
 
 
 ## Mise

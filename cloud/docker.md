@@ -12,6 +12,8 @@
         - `sudo chown "$USER":"$USER" /home/"$USER"/.docker -R`
         - `sudo chmod g+rwx "/home/$USER/.docker" -R`
 + `docker build --rm`, remove intermediate containers after a successful build, should be default behavior
++ [/etc/docker/daemon.json](https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-configuration-file), configure insecure-registries, dns and so forth
+
 ## docker inspect with jq
 + `docker inspect ebdb795dc32d | jq '.[0]' | jq keys`: show all keys
 + `docker inspect ebdb795dc32d | jq '.[0]' | jq .NetworkSettings`: show values for
