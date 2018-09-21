@@ -15,8 +15,9 @@
 ## Mise
 + [variadic parameter in interface](https://github.com/go-kit/kit/blob/master/metrics/metrics.go)
 
+## TODO
++ signal: https://github.com/GoogleContainerTools/skaffold/blob/master/cmd/skaffold/app/cmd/signals.go
 
 ## My awesome go list
 + [viper](https://github.com/spf13/viper): Viper is a complete configuration solution for Go applications including 12-Factor apps. It is designed to work within an application, and can handle all types of configuration needs and formats
-
 + [cobra](https://github.com/spf13/cobra): My cobra demo app at https://github.com/wilbeibi/cobra-demo

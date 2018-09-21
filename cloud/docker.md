@@ -23,7 +23,7 @@
 
 ## [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/#use-multi-stage-builds)
 + [bank-vault example](https://github.com/banzaicloud/bank-vaults/blob/master/Dockerfile)
-
++ [multi-stage build](https://github.com/AlphaWong/go-test-multi-stage-build/blob/master/Dockerfile)
 ## Useful images
 1. Docker management UI:
 ```

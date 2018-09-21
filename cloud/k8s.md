@@ -13,7 +13,13 @@
 + [squash](https://github.com/solo-io/squash): The debugger for micro-services
 + [VSCode Kubernetes Tools](https://github.com/Azure/vscode-kubernetes-tools)
 + ⭐️ [Skaffold](https://github.com/GoogleContainerTools/skaffold): watching changes and build/push images, apply k8s manifests
-  - [skaffold.yaml explained](https://github.com/GoogleContainerTools/skaffold/blob/master/examples/annotated-skaffold.yaml)
+- [skaffold.yaml explained](https://github.com/GoogleContainerTools/skaffold/blob/master/examples/annotated-skaffold.yaml)
+
+## Development
++ [k8s.io/client-go](https://github.com/kubernetes/client-go)
++ [kubernetes/apimachinery](https://github.com/kubernetes/apimachinery): This library is a shared dependency for servers and clients to work with Kubernetes API infrastructure without direct type dependencies. Its first consumers are k8s.io/kubernetes, k8s.io/client-go, and k8s.io/apiserver
++ CRD
++ operator sdk
 
 ## [kubectl tips and tricks](https://discuss.kubernetes.io/t/kubectl-tips-and-tricks/192/7)
 + `kubectl alpha diff --help`: analyzes two kubernetes resources and prints the lines that are different.
