@@ -38,10 +38,8 @@
 16. `MY_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)` [refer](https://unix.stackexchange.com/a/81699/36211)
 17. `&&` in bash is "AND", statement to the left as well as right of `&&` should be run in sequence, `&` means preceding commands, 
     to the immediate left of the `&`, should simply run in the background
-18. `rg -F -e` to search literal string
 
-=======
-### ripgrep
+## ripgrep
 - `rg -F -e` to search literal string
 - `rg -t go <keyword> -g '!vendor'`: only search in go files, ignore path contains vendor
 - `rg fast README.md --replace FAST`:  replace all occurrences of `fast` with `FAST`
@@ -49,5 +47,8 @@
 - `rg -z/--search-zip`: search compressed files
 - [Add custom type](https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md#configuration-file): --type-add web:\*.{html,css,js}\*
 
+## Good code
+- [docker-gc](https://github.com/spotify/docker-gc/blob/master/docker-gc)
 ## References
 + [Advanced Bash-Scripting Guide](https://www.tldp.org/LDP/abs/abs-guide.pdf)
++ :star: [special dollar sign shell variables](https://stackoverflow.com/questions/5163144/what-are-the-special-dollar-sign-shell-variables)
