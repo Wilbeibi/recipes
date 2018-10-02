@@ -18,6 +18,7 @@
 ## Development
 + [k8s.io/client-go](https://github.com/kubernetes/client-go)
 + [kubernetes/apimachinery](https://github.com/kubernetes/apimachinery): This library is a shared dependency for servers and clients to work with Kubernetes API infrastructure without direct type dependencies. Its first consumers are k8s.io/kubernetes, k8s.io/client-go, and k8s.io/apiserver
++ [c-bata/kube-prompt](https://github.com/c-bata/kube-prompt): An interactive kubernetes client featuring auto-complete (`sync` package and `client-go` usage)
 + CRD
 + operator sdk
 
@@ -48,7 +49,7 @@
 + **Port**: Port is the port number which makes a service visible to other services running within the same K8s cluster.  In other words, in case a service wants to invoke another service running within the same Kubernetes cluster, it will be able to do so using port specified against “port” in the service spec file.
 + **Target Port**: Target port is the port on the POD where the service is running.
 + **Nodeport**: Node port is the port on which the service can be accessed from external users using kube-proxy
-+
+
 ## Helm
 + `helm template`: locally render templates
 + `helm install --dry-run --debug <char_dir>`: check the generated manifests

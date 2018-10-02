@@ -19,6 +19,10 @@
 + `docker inspect ebdb795dc32d | jq '.[0]' | jq keys`: show all keys
 + `docker inspect ebdb795dc32d | jq '.[0]' | jq .NetworkSettings`: show values for
     a specific key (or ` jq -r '.[0].NetworkSettings.IPAddress'`)
+
+## run command line tools installed in container
++ `cat test.json | docker run -i stedolan/jq '.[] | .full_name' > res.txt`: so save effect install command on local machine
+
 ## net libc issue
 + when `CGO_ENABLED=0`, and use `net` in code, may have issue, that's because libc missing, add `RUN apk add --no-cache libc6-compat`
 
@@ -36,11 +40,14 @@ docker run -d -p 9000:9000 \
 
 2. Code search:
 ```
-docker run \
---publish 7080:7080 --rm \
+docker run -d \
+--publish 80:7080 \
+--publish 443:7443 \
+--restart unless-stopped \
 --volume /tmp/sourcegraph/config:/etc/sourcegraph \
 --volume /tmp/sourcegraph/data:/var/opt/sourcegraph \
-sourcegraph/server
+--volume /var/run/docker.sock:/var/run/docker.sock \
+sourcegraph/server:2.11.2
 ```
 
 3. [FreshRSS](https://github.com/FreshRSS/FreshRSS/tree/master/Docker#run-freshrss):

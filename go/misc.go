@@ -3,10 +3,14 @@
 package main
 
 import (
+	"context"
+	"crypto/rand"
 	"fmt"
 	"os"
+	"os/exec"
 	"runtime"
 	"strings"
+	"time"
 )
 
 func uuid() string {
@@ -21,6 +25,16 @@ func uuid() string {
 	return uuid
 }
 
+// RandomID, from https://github.com/GoogleContainerTools/skaffold/blob/master/pkg/skaffold/util/util.go#L34
+func RandomID() string {
+	b := make([]byte, 16)
+	_, err := rand.Read(b)
+	if err != nil {
+		panic(err)
+	}
+	return fmt.Sprintf("%x", b)
+}
+
 func splitAndFields() {
 	fmt.Printf("%q\n", strings.Split(" hello  world", " ")) // ["" "hello" "" "world"]
 	fmt.Printf("%q\n", strings.Fields(" hello  world"))     // ["hello" "world"]
@@ -32,4 +46,13 @@ func splitAndFields() {
 func printVersion() {
 	fmt.Printf("Go Version: %s", runtime.Version())
 	fmt.Printf("Go OS/Arch: %s/%s", runtime.GOOS, runtime.GOARCH)
+}
+
+// From github.com/go101/go101/go101.go
+func runShellCommand(timeout time.Duration, cmd string, args ...string) ([]byte, error) {
+	ctx, cancel := context.WithTimeout(context.Background(), timeout)
+	defer cancel()
+	command := exec.CommandContext(ctx, cmd, args...)
+	command.Dir = rootPath
+	return command.Output()
 }

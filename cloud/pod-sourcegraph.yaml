@@ -12,6 +12,9 @@ spec:
     - name: "sg-data"
       hostPath:
         path: "/data/sourcegraph/data"
+    - name: "docker-sock"
+      hostPath:
+        path: "/var/run/docker.sock"
   containers:
     - image: sourcegraph/server
       name: sourcegraph
@@ -19,7 +22,9 @@ spec:
         - mountPath: "/etc/sourcegraph"
           name: "sg-config"
         - mountPath: "/var/opt/sourcegraph"
-          name: "sg-data"          
+          name: "sg-data"
+        - mountPath: "/var/run/docker.sock"
+          name: "docker-sock"
       ports:
         - containerPort: 7080
           name: http

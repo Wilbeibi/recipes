@@ -34,19 +34,21 @@
 - `fc`: fix command, open the last command you ran in an editor, and rerun
 - `date -u`: show UTC time now
 - `set -x` enables a mode of the shell where all executed commands are printed to the terminal
-- `jq`: 'fromjson' to unescape, 'tojson' to escape when parsing
 - `MY_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)` [refer](https://unix.stackexchange.com/a/81699/36211)
 - `&&` in bash is "AND", statement to the left as well as right of `&&` should be run in sequence, `&` means preceding comands, 
     to the immediate left of the `&`, should simply run in the background
+
+## jq
+- `jq`: 'fromjson' to unescape, 'tojson' to escape when parsing
 
 ## Git    
 - GIT_BRANCH="$(git rev-parse --abbrev-ref HEAD)" to get current git branch
 - COMMIT_HASH_SHORT="$(git rev-parse --short HEAD)" to get current commit id
 ## ripgrep
 - `rg -F -e` to search literal string
-- `rg -t go <keyword> -g '!vendor'`: only search in go files, ignore path contains vendor
+- `rg -t go -g '!vendor' -g '!mod' -g '!dep' <keyword>`: only search in go files, ignore path contains vendor and mod
 - `rg fast README.md --replace FAST`:  replace all occurrences of `fast` with `FAST`
-- `rg 'type((\s\w+\s)+)interface' -g '!vendor'`: find all interface definitions
+- `rg 'type((\s\w+\s)+)interface' -g '!vendor'`: find all interface definitions suit pattern "type <interface_name> interface"
 - `rg -z/--search-zip`: search compressed files
 - [Add custom type](https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md#configuration-file): --type-add web:\*.{html,css,js}\*
 
