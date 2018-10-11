@@ -13,7 +13,8 @@
 + [squash](https://github.com/solo-io/squash): The debugger for micro-services
 + [VSCode Kubernetes Tools](https://github.com/Azure/vscode-kubernetes-tools)
 + ⭐️ [Skaffold](https://github.com/GoogleContainerTools/skaffold): watching changes and build/push images, apply k8s manifests
-- [skaffold.yaml explained](https://github.com/GoogleContainerTools/skaffold/blob/master/examples/annotated-skaffold.yaml)
+	- [skaffold.yaml explained](https://github.com/GoogleContainerTools/skaffold/blob/master/examples/annotated-skaffold.yaml)
++ [kubectl-plugins](https://github.com/jordanwilson230/kubectl-plugins)
 
 ## Development
 + [k8s.io/client-go](https://github.com/kubernetes/client-go)
