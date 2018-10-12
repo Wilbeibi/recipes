@@ -42,8 +42,10 @@
 + `kubectl get pods | grep Evicted | awk '{print $1}' | xargs kubectl delete pod`: Delete evicted pods
 + Accessing pod metadata [ref](https://github.com/luksa/kubernetes-in-action/blob/master/Chapter08/downward-api-env.yaml)
 + `kubectl api-versions`: Find api versions cluster support.
-+ Debugging pod: `kubectl describe pod <pod-id>`, `kubectl get pods -o wide`
-+ `kubectl exec POD_NAME -c CONTAINER_NAME reboot`: reboot specific container of pod
++ `kubectl exec POD_NAME -c CONTAINER_NAME reboot`: reboot specific container of pod  
++ `kubectl delete pods <pod> --grace-period=0 --force`: force delete terminating pods 
++ `kubectl get pods -o wide` see pod running on which node
++ ssh to that work node, `sudo journalctl -u kubelet.service` check kubelet logs
 
 ### Port, Target Port and Nodeport [ref](https://vitalflux.com/kubernetes-port-targetport-and-nodeport/):
 + **Port**: Port is the port number which makes a service visible to other services running within the same K8s cluster.  In other words, in case a service wants to invoke another service running within the same Kubernetes cluster, it will be able to do so using port specified against “port” in the service spec file.
