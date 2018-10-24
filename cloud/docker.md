@@ -13,6 +13,7 @@
         - `sudo chmod g+rwx "/home/$USER/.docker" -R`
 + `docker build --rm`, remove intermediate containers after a successful build, should be default behavior
 + [/etc/docker/daemon.json](https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-configuration-file), configure insecure-registries, dns and so forth
+    + [limit container logs to 10gb](https://nickjanetakis.com/blog/docker-tip-69-avoid-running-out-of-disk-space-from-container-logs)
 + How to fix "x509: certificate has expired or is not yet valid"? `docker-machine regenerate-certs --client-certs [name]`
 
 ## docker inspect with jq

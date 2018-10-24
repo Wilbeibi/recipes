@@ -12,11 +12,18 @@
 + `replace "rsc.io/quote" v1.5.2 => "../quote"`: replace with local directory
 + `vgo vendor`: put dependencies in vendor to comfort traditional `go build` person
 
+
+## READ
++ [tar](https://github.com/GoogleContainerTools/skaffold/blob/master/pkg/skaffold/util/tar.go)
++ [update-fmt.sh](https://github.com/heptio/ark/blob/master/hack/update-fmt.sh)
+    - `gofmt -w -s $(find . -type f -name "*.go" -not -path "./vendor/*" -not -path "./pkg/generated/*" -not -name "zz_generated*")`
+    - `goimports > /dev/null || go get golang.org/x/tools/cmd/goimports` [about ||](https://unix.stackexchange.com/a/24685/36211)
+    - `goimports -w -d $(find . -type f -name "*.go" -not -path "./vendor/*" -not -path "./pkg/generated/*" -not -name "zz_generated*")`
++ [notify](https://github.com/oxequa/realize/blob/master/realize/notify.go)
++ [vault/helper](https://github.com/hashicorp/vault/tree/master/helper)
+    + [read password from stdin/file](https://github.com/hashicorp/vault/blob/master/helper/password/password.go)
 ## Mise
 + [variadic parameter in interface](https://github.com/go-kit/kit/blob/master/metrics/metrics.go)
-
-## TODO
-+ [tar](https://github.com/GoogleContainerTools/skaffold/blob/master/pkg/skaffold/util/tar.go)
 
 ## My awesome go list
 + [viper](https://github.com/spf13/viper): Viper is a complete configuration solution for Go applications including 12-Factor apps. It is designed to work within an application, and can handle all types of configuration needs and formats

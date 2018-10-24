@@ -1,4 +1,4 @@
-# Kubernetes notes
+e Kubernetes notes
 ## Libraries and Tools
 + [Jaeger](https://github.com/jaegertracing/jaeger): tracing
 + [kops](https://github.com/kubernetes/kops): k8s install/upgrade/management
@@ -20,7 +20,8 @@
 + [k8s.io/client-go](https://github.com/kubernetes/client-go)
 + [kubernetes/apimachinery](https://github.com/kubernetes/apimachinery): This library is a shared dependency for servers and clients to work with Kubernetes API infrastructure without direct type dependencies. Its first consumers are k8s.io/kubernetes, k8s.io/client-go, and k8s.io/apiserver
 + [c-bata/kube-prompt](https://github.com/c-bata/kube-prompt): An interactive kubernetes client featuring auto-complete (`sync` package and `client-go` usage)
-+ CRD
++ [kubectl source code](https://github.com/kubernetes/kubernetes/tree/master/pkg/kubectl): A good way to see how k8s SDK is been used
++ [Extend Kubernetes 1.7 with Custom Resources](https://thenewstack.io/extend-kubernetes-1-7-custom-resources)
 + operator sdk
 
 ## [kubectl tips and tricks](https://discuss.kubernetes.io/t/kubectl-tips-and-tricks/192/7)
@@ -47,6 +48,11 @@
 + `kubectl delete pods <pod> --grace-period=0 --force`: force delete terminating pods 
 + `kubectl get pods -o wide` see pod running on which node
 + ssh to that work node, `sudo journalctl -u kubelet.service` check kubelet logs
++ `kubectl logs crash-1234567890-pod --previous`: print the logs for the previous instance of the container in a pod if it exists
++ `kubectl create -f some.deploy.yaml --dry-run --validate=true` to validate Kubernetes API
++ `kubectl get secret docker-pull-secret -o json --namespace old | jq '.metadata.namespace = "new"' | kubectl create -f  -`
++ `kubectl wait --for=condition=Ready pod/busybox1 --timeout=20s`: Wait for the pod "busybox1" to contain the status condition of type "Ready" for 20s
+
 
 ### Port, Target Port and Nodeport [ref](https://vitalflux.com/kubernetes-port-targetport-and-nodeport/):
 + **Port**: Port is the port number which makes a service visible to other services running within the same K8s cluster.  In other words, in case a service wants to invoke another service running within the same Kubernetes cluster, it will be able to do so using port specified against “port” in the service spec file.

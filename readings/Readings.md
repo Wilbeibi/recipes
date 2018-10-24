@@ -12,8 +12,8 @@
 + Dieter Rams: As Little Design as Possible
 
 ## Infra
-+ Principles of Computer System Design An Introduction
-+ [Designing Distributed Systems](Principles of Computer System Design An Introduction)
++ [Principles of Computer System Design An Introduction](https://ocw.mit.edu/resources/res-6-004-principles-of-computer-system-design-an-introduction-spring-2009/online-textbook/)
++ [Designing Distributed Systems](https://azure.microsoft.com/en-us/resources/designing-distributed-systems/)
 
 ## SysAdmin
 + The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations
