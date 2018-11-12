@@ -113,6 +113,10 @@ stdout_logfile=/var/log/test1.log
 ### git console show non-ascii path name
 + `git config --global core.quotepath off`, [refer](https://stackoverflow.com/a/22828826/1035859)
 
+## Perf
++ [fio: Flexible I/O Tester](https://github.com/axboe/fio)
++ [filebench: generated storage benchmark workloads](https://github.com/filebench/filebench/wiki)
+
 
 ## Mise
 + [My Diigo Programming Notes](https://www.diigo.com/outliner/dzi0kh/Programming?key=a7q47wq9b2)
