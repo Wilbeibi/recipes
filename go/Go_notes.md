@@ -1,16 +1,16 @@
 # Golang Notes
-## vgo [ref](https://zhuanlan.zhihu.com/p/33926171) (TODO: deprecated, called go module now)
-+ touch go.mod; vgo build
-+ `vgo list -m`: check all dependencies
-+ `vgo list -m -u`: check all dependencies and update
-+ `vgo test all`: execute all tests
-+ `vgo get -u`: upgrade all dependencies
-+ `vgo list -u rsc.io/sample`: check all available version(tag) of specific package
-+ `vgo get rsc.io/sample@1.3.1`: get specific version and modify go.mod
-+ `exclude "rsc.io/sampler" v1.99.99`: exclude version v1.99.99 via add this line to go.mod
-+ `replace "rsc.io/quote" v1.5.2 => "github.com/you/quote" v0.0.0-myfork`: replace package
-+ `replace "rsc.io/quote" v1.5.2 => "../quote"`: replace with local directory
-+ `vgo vendor`: put dependencies in vendor to comfort traditional `go build` person
+
+## Go module [ref](https://tonybai.com/2018/11/19/some-changes-in-go-1-11/)
++ `export GO111MODULE=on`: turn on go mod
++ `go mod init`: create go.mod file, if found existing version control tools, it will generate deps from them
++ `go build`: with go.mod exists, go build will fill the content of it and generate go.sum records dep version and hash
++ `go mod verify` to verify dependencies' versions are intact
++ `go mod why golang.org/x/oauth2` check whether oauth2 is a valid dependency
++ `go mod tidy` to clean up go.mod and go.sum
++ `go list -m -versions golang.org/x/text` to check all golang.org/x/text versions
++ `go get golang.org/x/text@v0.1.0` base on previous versions, downgrade it from v0.3.0 to v0.1.0
++ `go build -mode=vendor` to build with vendor for reproduceable build
++ cannot find module providing package issue: `go clean -modcache` and `go build` again
 
 
 ## READ
