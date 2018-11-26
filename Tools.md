@@ -63,6 +63,7 @@ stdout_logfile=/var/log/test1.log
 + <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>4</kbd>: copy picture of selected area(screenshot) to the clipboard
 + `sshfs <user>@<host>:/remote/path /mount/point` to mount remote filesystem using SSH SFTP.
 + ![命令行自动切换英文输入法](https://i.imgur.com/XQvkiYI.png)
++ [Tableplus](https://tableplus.io/): Database management
 + Briss2: pdf chop tool
 + `brew switch <formula> <version>`
 ## ZSH
@@ -124,3 +125,4 @@ stdout_logfile=/var/log/test1.log
 + Debug Chrome CPU hogging: Invoke `Chrome Menu / More Tools / Task Manager` to see what consumes CPU
 + <kbd>Fn</kbd> + <kbd>Q</kbd> to bluetooth pairing HHKB to Mac
 + `neofetch` to show system info
++ [search my gists](https://gist.github.com/search?utf8=%E2%9C%93&q=user%3Awilbeibi&ref=searchresults)

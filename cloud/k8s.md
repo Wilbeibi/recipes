@@ -52,7 +52,7 @@ e Kubernetes notes
 + `kubectl create -f some.deploy.yaml --dry-run --validate=true` to validate Kubernetes API
 + `kubectl get secret docker-pull-secret -o json --namespace old | jq '.metadata.namespace = "new"' | kubectl create -f  -`
 + `kubectl wait --for=condition=Ready pod/busybox1 --timeout=20s`: Wait for the pod "busybox1" to contain the status condition of type "Ready" for 20s
-
++ `kubectl logs -l app=myapp`: Collect logs from given label(all replica set)
 
 ### Port, Target Port and Nodeport [ref](https://vitalflux.com/kubernetes-port-targetport-and-nodeport/):
 + **Port**: Port is the port number which makes a service visible to other services running within the same K8s cluster.  In other words, in case a service wants to invoke another service running within the same Kubernetes cluster, it will be able to do so using port specified against “port” in the service spec file.
