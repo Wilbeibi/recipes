@@ -46,7 +46,7 @@
 - COMMIT_HASH_SHORT="$(git rev-parse --short HEAD)" to get current commit id
 ## ripgrep
 - `rg -F -e` to search literal string
-- `rg -t go -g '!vendor' -g '!mod' -g '!dep' <keyword>`: only search in go files, ignore path contains vendor and mod
+- `rg -t go -g '!vendor' -g '!mod' -g '!dep' -g '!*_test.go' <keyword>`: only search in go files, ignore path contains vendor and mod
 - `rg fast README.md --replace FAST`:  replace all occurrences of `fast` with `FAST`
 - `rg 'type((\s\w+\s)+)interface' -g '!vendor'`: find all interface definitions suit pattern "type <interface_name> interface"
 - `rg -z/--search-zip`: search compressed files
