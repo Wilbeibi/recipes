@@ -63,6 +63,7 @@ e Kubernetes notes
 + `helm template`: locally render templates
 + `helm install --dry-run --debug <char_dir>`: check the generated manifests
 + `helm list | grep FAILED | awk '{print $1}' | xargs -L1 helm delete`: delete all failed releases
++ `helm init --upgrade`: resolve "Error: incompatible versions client[vy.y.y] server[v.x.x.x]"
 + [stable/rabbimq/templates/svc.yaml](https://github.com/helm/charts/blob/master/stable/rabbitmq/templates/svc.yaml)
 + [test-vault-status.yaml](https://github.com/banzaicloud/banzai-charts/blob/master/vault/templates/tests/test-vault-status.yaml)
 + [unittest of consul-helm](https://github.com/hashicorp/consul-helm/tree/master/test/unit)

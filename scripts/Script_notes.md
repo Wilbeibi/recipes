@@ -44,6 +44,7 @@
 ## Git    
 - GIT_BRANCH="$(git rev-parse --abbrev-ref HEAD)" to get current git branch
 - COMMIT_HASH_SHORT="$(git rev-parse --short HEAD)" to get current commit id
+- `git clean -fXd` to remove untracked files and directories [ref](https://stackoverflow.com/a/64966/1035859)
 ## ripgrep
 - `rg -F -e` to search literal string
 - `rg -t go -g '!vendor' -g '!mod' -g '!dep' -g '!*_test.go' <keyword>`: only search in go files, ignore path contains vendor and mod

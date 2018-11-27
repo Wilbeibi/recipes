@@ -9,7 +9,7 @@
 + `go mod tidy` to clean up go.mod and go.sum
 + `go list -m -versions golang.org/x/text` to check all golang.org/x/text versions
 + `go get golang.org/x/text@v0.1.0` base on previous versions, downgrade it from v0.3.0 to v0.1.0
-+ `go build -mode=vendor` to build with vendor for reproduceable build
++ `go build -mod=vendor` to build with vendor for reproduceable build
 + cannot find module providing package issue: `go clean -modcache` and `go build` again
 
 
