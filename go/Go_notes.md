@@ -9,9 +9,12 @@
 + `go mod tidy` to clean up go.mod and go.sum
 + `go list -m -versions golang.org/x/text` to check all golang.org/x/text versions
 + `go get golang.org/x/text@v0.1.0` base on previous versions, downgrade it from v0.3.0 to v0.1.0
-+ `go build -mod=vendor` to build with vendor for reproduceable build
++ `go build -mod=vendor` to build with vendor for reproducible build
 + cannot find module providing package issue: `go clean -modcache` and `go build` again
 
+## FAQ
++ [What is x.(T)?](https://golang.org/ref/spec#Type_assertions)
++ [What is omitempty in json/xml parsing](https://www.socketloop.com/tutorials/golang-meaning-of-omitempty-in-struct-s-field-tag)
 
 ## READ
 + [tar](https://github.com/GoogleContainerTools/skaffold/blob/master/pkg/skaffold/util/tar.go)
@@ -22,11 +25,20 @@
 + [notify](https://github.com/oxequa/realize/blob/master/realize/notify.go)
 + [vault/helper](https://github.com/hashicorp/vault/tree/master/helper)
     + [read password from stdin/file](https://github.com/hashicorp/vault/blob/master/helper/password/password.go)
++ [k8s.io/client-go/util/workqueue](https://github.com/kubernetes/client-go/tree/master/util/workqueue)
++ [skaffold pkg util](https://github.com/GoogleContainerTools/skaffold/blob/master/pkg/skaffold/util/util.go)
++ [kubewatch k8sutil: in cluster client/out of cluster client](https://github.com/bitnami-labs/kubewatch/blob/master/pkg/utils/k8sutil.go#L18-L50)
++ [Pluck](https://github.com/pulumi/pulumi-kubernetes/blob/master/pkg/openapi/openapi.go#L121) like `json.Unmarshal` for unstructured
 ## Mise
 + [variadic parameter in interface](https://github.com/go-kit/kit/blob/master/metrics/metrics.go)
++ [returns the first IPv4 address of the supplied interface name](https://github.com/weaveworks/common/blob/master/network/interface.go#L9)
 
-## My awesome go list
+## Awesome Go libraries
 + [viper](https://github.com/spf13/viper): Viper is a complete configuration solution for Go applications including 12-Factor apps. It is designed to work within an application, and can handle all types of configuration needs and formats
 + [cobra](https://github.com/spf13/cobra): My cobra demo app at https://github.com/wilbeibi/cobra-demo
-+ [skaffold pkg util](https://github.com/GoogleContainerTools/skaffold/blob/master/pkg/skaffold/util/util.go)
-+ [kubewatch k8sutil](https://github.com/bitnami-labs/kubewatch/blob/master/pkg/utils/k8sutil.go)
++ [bleve: lightweight index/search engine](https://github.com/blevesearch/bleve)
+    + [demo: beer-search](https://github.com/blevesearch/beer-search)
++ [gocui: Console User Interfaces](https://github.com/jroimartin/gocui)
+    + [gitbatch usage](https://github.com/isacikgoz/gitbatch)
++ [go-prompt: interactive prompts in Go](https://github.com/c-bata/go-prompt)
+    + [tldr](https://github.com/isacikgoz/tldr)

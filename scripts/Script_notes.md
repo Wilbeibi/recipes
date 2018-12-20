@@ -10,10 +10,11 @@
     - `-P` turns on `--partial` and `--progress`
     - `--partial` makes rsync keep partially transferred files if the transfer is interrupted
     - `--progress` shows a progress bar for each transfer, useful if you transfer big files
-- netstat: -l/--listening, -a/--all, -t/--tcp, -u/--udp, -n/--numeric
+- netstat: -l/--listening, -a/--all, -t/--tcp, -u/--udp, -n/--numeric -p/--program
     - `netstat -atn` check listening TCP ports
     - `netstat -atn` check listening UCP ports
-    - `netstat -atun` check listening on both ports
+    - `netstat -tunpal` check listening on both ports for TCP/UDP of program(pid)
+    - `ss -tunpal` newer version of netstat (remember as "tuna, please") from [b0rk](https://twitter.com/b0rk/status/1090058524137345025)
 - `cat /proc/sys/kernel/random/entropy_avail`: Check entropy pool size (below 200 is not good)
 - `curl -w "TCP handshake: %{time_connect}， SSL handshake: %{time_appconnect}\n" -so /dev/null https://www.google.com`
     - HTTP time: TCP handshake
@@ -37,7 +38,13 @@
 - `MY_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)` [refer](https://unix.stackexchange.com/a/81699/36211)
 - `&&` in bash is "AND", statement to the left as well as right of `&&` should be run in sequence, `&` means preceding comands, 
     to the immediate left of the `&`, should simply run in the background
-
+- `dig -t A wilbeibi.com +trace` trace DNS resolve
+- `vim scp://user@server/~/data.txt`: edit file on remote server
+-  `tr : '\n' <<<$PATH`: show directories in PATH, one per line (`<<<` for redirects the string to stdin of the command), or `echo $PATH|tr ":" "\n"`
+- `ssh -L 80:localhost:8080 remotehost`: browser visit localhost:80 is actually get response from remotehost:8080
+- `ssh -R 8080:localhost:80 remotehost`: vice versa
+- [ssh jump host config](https://gist.github.com/wilbeibi/1505fcd81f7376cdd91cd370d2dd9204)
+- [ncdu](https://dev.yorhel.nl/ncdu): check disk usage interactively
 ## jq
 - `jq`: 'fromjson' to unescape, 'tojson' to escape when parsing
 

@@ -63,10 +63,12 @@ e Kubernetes notes
 + `helm template`: locally render templates
 + `helm install --dry-run --debug <char_dir>`: check the generated manifests
 + `helm list | grep FAILED | awk '{print $1}' | xargs -L1 helm delete`: delete all failed releases
++ `helm list | grep -v default | awk {if (NR!=1) print $1} | xargs helm delete`: delete release not in default namespace
 + `helm init --upgrade`: resolve "Error: incompatible versions client[vy.y.y] server[v.x.x.x]"
++ [helm install order](https://github.com/helm/helm/blob/release-2.10/pkg/tiller/kind_sorter.go#L29)
 + [stable/rabbimq/templates/svc.yaml](https://github.com/helm/charts/blob/master/stable/rabbitmq/templates/svc.yaml)
 + [test-vault-status.yaml](https://github.com/banzaicloud/banzai-charts/blob/master/vault/templates/tests/test-vault-status.yaml)
 + [unittest of consul-helm](https://github.com/hashicorp/consul-helm/tree/master/test/unit)
-
++ [IPC_LOCK and SYS_RESOURCE](https://github.com/apache/beam/blob/master/.test-infra/kubernetes/elasticsearch/LargeProductionCluster/es-services-deployments.yaml#L223)
 ## k8s recipes
 + init container (TODO: local repo)

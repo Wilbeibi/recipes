@@ -33,10 +33,8 @@
 ## Useful images
 1. Docker management UI:
 ```
-docker run -d -p 9000:9000 \
---restart always \
--v /var/run/docker.sock:/var/run/docker.sock \
--v /opt/portainer:/data portainer/portainer
+$ docker volume create portainer_data
+$ docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
 ```
 
 2. Code search:

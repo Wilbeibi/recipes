@@ -13,6 +13,7 @@
 + <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>k</kbd> to delete current line
 + `"editor.minimap.enabled": false`: to disable minimap
 + [这就是我想要的 VSCode 插件！](https://zhuanlan.zhihu.com/p/36020180)
+
 ### CLI
 + `code .` : Open the current folder in a new window
 + `code -r .` : Open the current folder in the current window
@@ -81,6 +82,9 @@ stdout_logfile=/var/log/test1.log
 + theme: spaceship, font: 14pt Fira Mono for Powerline
 ## iTerm2
 + [delete world/line in iTerm2](https://coderwall.com/p/ds2dha/word-line-deletion-and-navigation-shortcuts-in-iterm2): deleting a word: 0x17, deleting a line: 0x15
+## Dash
++ "Third-party sources" -> "Go Docsets", can add open source godocs
+
 ## Git
 ### Stash [ref](https://gist.github.com/subchen/3409a16cb46327ca7691)
 + `git stash save "message..."`: Save current work progress, staged/unstaged
@@ -113,6 +117,9 @@ stdout_logfile=/var/log/test1.log
 + `git config credential.helper store` to avoid keep been asked for username and password
 ### git console show non-ascii path name
 + `git config --global core.quotepath off`, [refer](https://stackoverflow.com/a/22828826/1035859)
+## update upstream from forked repo
++ `git remote add upstream <original repo>.git`
++ `git pull upstream master`
 
 ## Perf
 + [fio: Flexible I/O Tester](https://github.com/axboe/fio)

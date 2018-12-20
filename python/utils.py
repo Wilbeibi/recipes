@@ -38,3 +38,9 @@ def humanize_bytes(bytesize, precision=2):
         if bytesize >= factor:
             break
     return '%.*f %s' % (precision, bytesize / factor, suffix)
+
+# progress bar
+from tqdm import tqdm
+urls = ['url1', 'url2', 'url3']
+for url in tgdm(urls):
+    # process(url)
