@@ -111,8 +111,8 @@ stdout_logfile=/var/log/test1.log
 ### config per repository [ref](https://stackoverflow.com/questions/18181439/git-different-config-for-different-repository)
 ### Change commit author
 + `git commit --amend --author="Author Name <email@address.com>"`
-### git gc
-+ `git gc --aggressive` to compress repo.
+### git gc is bad, use repack instead
++ `git repack -a -d --depth=250 --window=250` [refer Linus](http://gcc.gnu.org/ml/gcc/2007-12/msg00165.html)
 ### store credentials
 + `git config credential.helper store` to avoid keep been asked for username and password
 ### git console show non-ascii path name
