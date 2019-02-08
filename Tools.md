@@ -117,9 +117,11 @@ stdout_logfile=/var/log/test1.log
 + `git config credential.helper store` to avoid keep been asked for username and password
 ### git console show non-ascii path name
 + `git config --global core.quotepath off`, [refer](https://stackoverflow.com/a/22828826/1035859)
-## update upstream from forked repo
+### update upstream from forked repo
 + `git remote add upstream <original repo>.git`
 + `git pull upstream master`
+### global gitignore
++ `git config --global core.excludesfile ~/.gitignore` ('.vscode', '.idea', '.DS_Store')
 
 ## Perf
 + [fio: Flexible I/O Tester](https://github.com/axboe/fio)
