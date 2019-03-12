@@ -29,6 +29,8 @@
 + [skaffold pkg util](https://github.com/GoogleContainerTools/skaffold/blob/master/pkg/skaffold/util/util.go)
 + [kubewatch k8sutil: in cluster client/out of cluster client](https://github.com/bitnami-labs/kubewatch/blob/master/pkg/utils/k8sutil.go#L18-L50)
 + [Pluck](https://github.com/pulumi/pulumi-kubernetes/blob/master/pkg/openapi/openapi.go#L121) like `json.Unmarshal` for unstructured
++ [go tour webcrawler](https://gist.github.com/wilbeibi/7f0c5d8cf60266bbb8f921029c4d7edf)
+
 ## Mise
 + [variadic parameter in interface](https://github.com/go-kit/kit/blob/master/metrics/metrics.go)
 + [returns the first IPv4 address of the supplied interface name](https://github.com/weaveworks/common/blob/master/network/interface.go#L9)

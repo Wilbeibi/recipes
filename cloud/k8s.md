@@ -15,6 +15,8 @@ e Kubernetes notes
 + ⭐️ [Skaffold](https://github.com/GoogleContainerTools/skaffold): watching changes and build/push images, apply k8s manifests
 	- [skaffold.yaml explained](https://github.com/GoogleContainerTools/skaffold/blob/master/examples/annotated-skaffold.yaml)
 + [kubectl-plugins](https://github.com/jordanwilson230/kubectl-plugins)
++ [kube-eagle](https://github.com/google-cloud-tools/kube-eagle): prometheus exporter for k8s resource(mem/cpu)
++ [cadvisor](https://github.com/google/cadvisor/tree/master/container/libcontainer): get detailed stats of containers
 
 ## Development
 + [k8s.io/client-go](https://github.com/kubernetes/client-go)
@@ -23,6 +25,8 @@ e Kubernetes notes
 + [kubectl source code](https://github.com/kubernetes/kubernetes/tree/master/pkg/kubectl): A good way to see how k8s SDK is been used
 + [Extend Kubernetes 1.7 with Custom Resources](https://thenewstack.io/extend-kubernetes-1-7-custom-resources)
 + operator sdk
++ [kubernetes-incubator/metrics-server](https://github.com/kubernetes-incubator/metrics-server)
++ [heptiolabs/eventrouter](https://github.com/heptiolabs/eventrouter)
 
 ## [kubectl tips and tricks](https://discuss.kubernetes.io/t/kubectl-tips-and-tricks/192/7)
 + `kubectl alpha diff --help`: analyzes two kubernetes resources and prints the lines that are different.
