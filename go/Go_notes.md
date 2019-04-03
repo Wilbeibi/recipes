@@ -15,6 +15,9 @@
 ## FAQ
 + [What is x.(T)?](https://golang.org/ref/spec#Type_assertions)
 + [What is omitempty in json/xml parsing](https://www.socketloop.com/tutorials/golang-meaning-of-omitempty-in-struct-s-field-tag)
++ [What is dot import](https://golang.org/ref/spec#Import_declarations): "If an explicit period (.) appears
+ instead of a name, all the package's exported identifiers will be declared in the current file's file block
+ and can be accessed without a qualifier."
 
 ## READ
 + [tar](https://github.com/GoogleContainerTools/skaffold/blob/master/pkg/skaffold/util/tar.go)

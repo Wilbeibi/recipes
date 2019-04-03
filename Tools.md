@@ -14,6 +14,9 @@
 + `"editor.minimap.enabled": false`: to disable minimap
 + [这就是我想要的 VSCode 插件！](https://zhuanlan.zhihu.com/p/36020180)
 
+### IntelliJ
++ GitToolBox Plugin
+
 ### CLI
 + `code .` : Open the current folder in a new window
 + `code -r .` : Open the current folder in the current window
