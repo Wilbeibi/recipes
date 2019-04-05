@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
   - name: netshoot
-    image: wilbeibi/netshoot:v0.2
+    image: wilbeibi/netshoot:v0.4
     command:
       - sleep
       - "10000"

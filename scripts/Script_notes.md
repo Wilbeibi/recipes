@@ -52,9 +52,11 @@
 - GIT_BRANCH="$(git rev-parse --abbrev-ref HEAD)" to get current git branch
 - COMMIT_HASH_SHORT="$(git rev-parse --short HEAD)" to get current commit id
 - `git clean -fXd` to remove untracked files and directories [ref](https://stackoverflow.com/a/64966/1035859)
-## ripgrep
+- `git fetch origin; git rebase -i origin/master; git push --force-with-lease origin dev` in dev branch to rebase from master
+- `git commmit --fixup <fix to which commit>` and `git rebase -i --autosquash <prev commit>`, refer [fixup and autosquash](https://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html)
+## ripgrep & silver searcher
 - `rg -F -e` to search literal string
-- `rg -t go -g '!vendor' -g '!mod' -g '!dep' -g '!*_test.go' <keyword>`: only search in go files, ignore path contains vendor and mod
+- `ag --go --ignore vendor --ignore mod --ignore '*_test.go' <keyword>`: only search in go files, ignore path contains vendor and mod
 - `rg fast README.md --replace FAST`:  replace all occurrences of `fast` with `FAST`
 - `rg 'type((\s\w+\s)+)interface' -g '!vendor'`: find all interface definitions suit pattern "type <interface_name> interface"
 - `rg -z/--search-zip`: search compressed files

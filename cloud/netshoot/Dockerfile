@@ -12,7 +12,10 @@ RUN set -ex \
     curl \
     drill \
     jq \
+    nmap \
     vim 
+
+RUN apk add hping3 --update-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing
 
 RUN mv /usr/sbin/tcpdump /usr/bin/tcpdump
 ENTRYPOINT ["sh" ]
