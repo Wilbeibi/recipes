@@ -59,6 +59,7 @@
 - `ag --go --ignore vendor --ignore mod --ignore '*_test.go' <keyword>`: only search in go files, ignore path contains vendor and mod
 - `rg fast README.md --replace FAST`:  replace all occurrences of `fast` with `FAST`
 - `rg 'type((\s\w+\s)+)interface' -g '!vendor'`: find all interface definitions suit pattern "type <interface_name> interface"
+- `rg "defer (.+)Rollback"`: match string like "defer tx.Rollback()"
 - `rg -z/--search-zip`: search compressed files
 - [Add custom type](https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md#configuration-file): --type-add web:\*.{html,css,js}\*
 
