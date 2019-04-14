@@ -54,6 +54,7 @@
 - `git clean -fXd` to remove untracked files and directories [ref](https://stackoverflow.com/a/64966/1035859)
 - `git fetch origin; git rebase -i origin/master; git push --force-with-lease origin dev` in dev branch to rebase from master
 - `git commmit --fixup <fix to which commit>` and `git rebase -i --autosquash <prev commit>`, refer [fixup and autosquash](https://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html)
+- [Git Interactive Rebase Tool](https://github.com/MitMaro/git-interactive-rebase-tool)
 ## ripgrep & silver searcher
 - `rg -F -e` to search literal string
 - `ag --go --ignore vendor --ignore mod --ignore '*_test.go' <keyword>`: only search in go files, ignore path contains vendor and mod
