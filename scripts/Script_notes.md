@@ -19,7 +19,7 @@
 - `curl -w "TCP handshake: %{time_connect}， SSL handshake: %{time_appconnect}\n" -so /dev/null https://www.google.com`
     - HTTP time: TCP handshake
     - HTTPS time: TCP handshake + SSL handshake
-- `pv`: "pipe viewer", show stats on data goi ng through a pipe
+- `pv`: "pipe viewer", show stats on data going through a pipe
 - `sed s/foo/bar/g file.txt`, `foo` can be a regular expression
     - GNU and BSD sed behaviors differently in `-i`, so [always use](https://stackoverflow.com/a/22084103/1035859) `-i.bak`
     - `sed -n 12p` print 12th line, `sed -n 5, 30p` print liens 5-30. `-n` suppresses output so only `p`'s part gets printed 
@@ -29,7 +29,7 @@
     - `$NF` for total number, last column
 - [less](https://twitter.com/b0rk/status/1005470181240508417): '/' search, 'n/N' next/prev match, 'j/K' down/up a line, 
     'g/G' begining/end of file
-    - `less -r` display bash esxape codes as colors
+    - `less -r` display bash escape codes as colors
     - `v` to edit file, `F` to keep reading as updated
     - `less +F` follow updates, `less +G` start 20% into file, `less +/foo` search for 'foo'
 - `fc`: fix command, open the last command you ran in an editor, and rerun
