@@ -133,7 +133,8 @@ stdout_logfile=/var/log/test1.log
 + `git config --global core.quotepath off`, [refer](https://stackoverflow.com/a/22828826/1035859)
 ### update upstream from forked repo
 + `git remote add upstream <original repo>.git`
-+ `git pull upstream master`
++ `git pull upstream master --rebase`
++ Always `git pull --rebase`: [refer](https://coderwall.com/p/yf5-0w/like-git-pull-rebase-make-it-default)
 ### global gitignore
 + `git config --global core.excludesfile ~/.gitignore` ('.vscode', '.idea', '.DS_Store')
 
