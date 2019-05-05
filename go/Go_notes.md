@@ -37,7 +37,7 @@
 ## Mise
 + [variadic parameter in interface](https://github.com/go-kit/kit/blob/master/metrics/metrics.go)
 + [returns the first IPv4 address of the supplied interface name](https://github.com/weaveworks/common/blob/master/network/interface.go#L9)
-
++ [sync.Pool to reduce freq memory allocate (groupcache)](https://github.com/golang/groupcache/commit/505a8b21f56554dffff1118e15a07a39aa0fbacc)
 ## Awesome Go libraries
 + [viper](https://github.com/spf13/viper): Viper is a complete configuration solution for Go applications including 12-Factor apps. It is designed to work within an application, and can handle all types of configuration needs and formats
 + [cobra](https://github.com/spf13/cobra): My cobra demo app at https://github.com/wilbeibi/cobra-demo

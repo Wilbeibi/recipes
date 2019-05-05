@@ -32,11 +32,12 @@
     - `less -r` display bash escape codes as colors
     - `v` to edit file, `F` to keep reading as updated
     - `less +F` follow updates, `less +G` start 20% into file, `less +/foo` search for 'foo'
+- [bat](https://github.com/sharkdp/bat): `alias lessy=bat -l yaml -p` as less alternative for yaml
 - `fc`: fix command, open the last command you ran in an editor, and rerun
 - `date -u`: show UTC time now
 - `set -x` enables a mode of the shell where all executed commands are printed to the terminal
 - `MY_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)` [refer](https://unix.stackexchange.com/a/81699/36211)
-- `&&` in bash is "AND", statement to the left as well as right of `&&` should be run in sequence, `&` means preceding comands, 
+- `&&` in bash is "AND", statement to the left as well as right of `&&` should be run in sequence, `&` means preceding commands, 
     to the immediate left of the `&`, should simply run in the background
 - `dig -t A wilbeibi.com +trace` trace DNS resolve
 - `vim scp://user@server/~/data.txt`: edit file on remote server
@@ -45,6 +46,7 @@
 - `ssh -R 8080:localhost:80 remotehost`: vice versa
 - [ssh jump host config](https://gist.github.com/wilbeibi/1505fcd81f7376cdd91cd370d2dd9204)
 - [ncdu](https://dev.yorhel.nl/ncdu): check disk usage interactively
+- [moreutils: the utilities package every UNIX/Linux/Mac OS developer should know](https://rentes.github.io/unix/utilities/2015/07/27/moreutils-package/)
 ## jq
 - `jq`: 'fromjson' to unescape, 'tojson' to escape when parsing
 
@@ -54,7 +56,7 @@
 - `git clean -fXd` to remove untracked files and directories [ref](https://stackoverflow.com/a/64966/1035859)
 - `git fetch origin; git rebase -i origin/master; git push --force-with-lease origin dev` in dev branch to rebase from master
 - `git commmit --fixup <fix to which commit>` and `git rebase -i --autosquash <prev commit>`, refer [fixup and autosquash](https://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html)
-- [Git Interactive Rebase Tool](https://github.com/MitMaro/git-interactive-rebase-tool)
+
 ## ripgrep & silver searcher
 - `rg -F -e` to search literal string
 - `ag --go --ignore vendor --ignore mod --ignore '*_test.go' <keyword>`: only search in go files, ignore path contains vendor and mod
@@ -63,6 +65,10 @@
 - `rg "defer (.+)Rollback"`: match string like "defer tx.Rollback()"
 - `rg -z/--search-zip`: search compressed files
 - [Add custom type](https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md#configuration-file): --type-add web:\*.{html,css,js}\*
+### Third party git tools
+- [Git Interactive Rebase Tool](https://github.com/MitMaro/git-interactive-rebase-tool)
+- ⭐ [tj/git-extras](https://github.com/tj/git-extras)
+- ⭐ [nvie/git-toolbelt](https://github.com/nvie/git-toolbelt)
 
 ## Good code
 - [docker-gc](https://github.com/spotify/docker-gc/blob/master/docker-gc)

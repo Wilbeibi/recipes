@@ -12,24 +12,19 @@
 + <kbd>Ctrl</kbd> + <kbd>G</kbd>: go to line
 + <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>k</kbd> to delete current line
 + `"editor.minimap.enabled": false`: to disable minimap
-
 + [这就是我想要的 VSCode 插件！](https://zhuanlan.zhihu.com/p/36020180)
 + <kbd>⌘</kbd> + click `rg` search result's file name, can open the file in VSCode
 + Command line
     + `alias code="/usr/local/bin/code-insiders"`: type `code` instead of `code-insiders`
     + `code -d file1 file2`: Compare file1 and file2 side by side
     + `code -g file:linenum`: Open file on the specific line
-### Golang config
-+ Install [Go outliner](https://marketplace.visualstudio.com/items?itemName=766b.go-outliner)
-+ `Go: Use Language Server` to sourcegraph search when hover.
-
-### IntelliJ
-+ GitToolBox Plugin
-
-### CLI
+### shell integration
 + `code .` : Open the current folder in a new window
 + `code -r .` : Open the current folder in the current window
 + `code -a .` : Add the current folder to the current window
+
+### IntelliJ
++ GitToolBox Plugin
 
 ## psql
 + `\l` or `\list`: list all databases
