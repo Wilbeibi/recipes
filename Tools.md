@@ -76,6 +76,8 @@ stdout_logfile=/var/log/test1.log
 + Briss2: pdf chop tool
 + `brew switch <formula> <version>`
 + [homebrew-cask-upgrade](https://github.com/buo/homebrew-cask-upgrade)
++ [Fliqlo: Mac 时钟壁纸](https://fliqlo.com)
++ [PodcastMenu: Overcast on Mac](https://github.com/insidegui/PodcastMenu)
 ## ZSH
 + `cd /u/l/b`: path expansion
 + `cd site1 site2`: path replacement, if you were in /srv/www/site1/current/log, it will go to /srv/www/site2/current/log via this command
