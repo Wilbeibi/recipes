@@ -14,6 +14,8 @@
 + `"editor.minimap.enabled": false`: to disable minimap
 + [这就是我想要的 VSCode 插件！](https://zhuanlan.zhihu.com/p/36020180)
 + <kbd>⌘</kbd> + click `rg` search result's file name, can open the file in VSCode
++ [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh): coding on SSH server
++ [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers): coding in container environment
 + Command line
     + `alias code="/usr/local/bin/code-insiders"`: type `code` instead of `code-insiders`
     + `code -d file1 file2`: Compare file1 and file2 side by side
