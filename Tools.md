@@ -11,6 +11,7 @@
 + <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd> to open a new window
 + <kbd>Ctrl</kbd> + <kbd>G</kbd>: go to line
 + <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>k</kbd> to delete current line
++ <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>`</kbd> to open terminal
 + `"editor.minimap.enabled": false`: to disable minimap
 + [这就是我想要的 VSCode 插件！](https://zhuanlan.zhihu.com/p/36020180)
 + <kbd>⌘</kbd> + click `rg` search result's file name, can open the file in VSCode
