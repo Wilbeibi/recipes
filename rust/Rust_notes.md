@@ -5,3 +5,4 @@
 + TODO: clap
 + TODO: StructOpt
 + TODO: log
++ TODO: criterion
