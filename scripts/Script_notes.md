@@ -47,6 +47,8 @@
 - [ssh jump host config](https://gist.github.com/wilbeibi/1505fcd81f7376cdd91cd370d2dd9204)
 - [ncdu](https://dev.yorhel.nl/ncdu): check disk usage interactively
 - [moreutils: the utilities package every UNIX/Linux/Mac OS developer should know](https://rentes.github.io/unix/utilities/2015/07/27/moreutils-package/)
+- [rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc](https://phiresky.github.io/blog/2019/rga--ripgrep-for-zip-targz-docx-odt-epub-jpg/)
+
 ## jq
 - `jq`: 'fromjson' to unescape, 'tojson' to escape when parsing
 
