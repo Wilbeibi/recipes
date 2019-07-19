@@ -137,7 +137,12 @@ stdout_logfile=/var/log/test1.log
 + Always `git pull --rebase`: [refer](https://coderwall.com/p/yf5-0w/like-git-pull-rebase-make-it-default)
 ### global gitignore
 + `git config --global core.excludesfile ~/.gitignore` ('.vscode', '.idea', '.DS_Store')
-
+### stash recipes
++ `git stash save <msg>`: save a stash with a message
++ `git stash -u/--include-untracked`: save untracked files
++ `git stash -p/--patch`: stash just a single file
++ `git stash show -p` show a stash or `git stash show` view the latest stash
++ `gits stash drop <stash_id>` or `git stash clear` to remove stash(s)
 ## Perf
 + [fio: Flexible I/O Tester](https://github.com/axboe/fio)
 + [filebench: generated storage benchmark workloads](https://github.com/filebench/filebench/wiki)
