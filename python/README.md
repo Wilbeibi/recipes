@@ -7,5 +7,6 @@
 ## Lib
 + [psycopg2](http://initd.org/psycopg/docs/usage.html): Postgres binding
 + [falcon](http://falcon.readthedocs.io/en/stable/user/quickstart.html)
++ [Plotly](https://github.com/plotly/plotly.py)
 # READ
 + [traceback from jinja2](https://github.com/pallets/jinja/blob/master/jinja2/debug.py)

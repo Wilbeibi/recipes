@@ -100,12 +100,6 @@ stdout_logfile=/var/log/test1.log
 + "Third-party sources" -> "Go Docsets", can add open source godocs
 
 ## Git
-### Stash [ref](https://gist.github.com/subchen/3409a16cb46327ca7691)
-+ `git stash save "message..."`: Save current work progress, staged/unstaged
-+ `git stash list`
-+ `git stash pop [--index] [<stash>]`: if not use parameter, recover the latest progress, and delete it from stash
-+ `git stash apply [--index] [<stash>]`: same as pop, just not delete it.
-+ `git stash clear`
 ### Clean commits [ref](https://about.gitlab.com/2018/06/07/keeping-git-commit-history-clean/)
 #### Change most recent commit
 + `git add file_to_change.go`
