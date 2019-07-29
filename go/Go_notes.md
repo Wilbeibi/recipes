@@ -33,6 +33,8 @@
 + [kubewatch k8sutil: in cluster client/out of cluster client](https://github.com/bitnami-labs/kubewatch/blob/master/pkg/utils/k8sutil.go#L18-L50)
 + [Pluck](https://github.com/pulumi/pulumi-kubernetes/blob/master/pkg/openapi/openapi.go#L121) like `json.Unmarshal` for unstructured
 + [go tour webcrawler](https://gist.github.com/wilbeibi/7f0c5d8cf60266bbb8f921029c4d7edf)
++ [golang/tools go fastwalk: faster version of filepath.Walk](https://github.com/golang/tools/blob/master/internal/fastwalk/fastwalk.go)
++ [golang/tools semvar](https://github.com/golang/tools/blob/master/internal/semver/semver.go)
 
 ## Mise
 + [variadic parameter in interface](https://github.com/go-kit/kit/blob/master/metrics/metrics.go)
