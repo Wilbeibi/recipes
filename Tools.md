@@ -1,6 +1,7 @@
 ## CLion
 + Multiple cursor: <kbd>Alt</kbd> + <kbd>Shift</kbd> + mouse click
-+ Dash: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>
++ Dash: <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>
++ Peek Definition: <kbd>⌘</kbd> + <kbd>Y</kbd>
 
 ## VSCode
 + <kbd>Ctrl</kbd> + <kbd>Tab</kbd> to switch tabs, <kbd>⌘</kbd> + <kbd>Tab</kbd> + LEFT/RIGHT
