@@ -10,6 +10,7 @@
 + <kbd>⌘</kbd> + Up/Down to go to head/end of file
 + <kbd>⌘</kbd> + Left/Right to go to first/last character of line
 + <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd> to open a new window
++ <kbd>⌘</kbd> + <kbd>+</kbd>/<kbd>-</kbd> to zoom fonts
 + <kbd>Ctrl</kbd> + <kbd>G</kbd>: go to line
 + <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>k</kbd> to delete current line
 + <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>`</kbd> to open terminal
