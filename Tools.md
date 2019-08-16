@@ -98,6 +98,8 @@ stdout_logfile=/var/log/test1.log
 + theme: spaceship, font: 14pt Fira Mono for Powerline
 ## iTerm2
 + [delete world/line in iTerm2](https://coderwall.com/p/ds2dha/word-line-deletion-and-navigation-shortcuts-in-iterm2): deleting a word: 0x17, deleting a line: 0x15
++ `Preference/Advanced`, search `Tabs`, select `Add new tabs at the end of the tab bar, not next to current tab` as `No`
+
 ## Dash
 + "Third-party sources" -> "Go Docsets", can add open source godocs
 
