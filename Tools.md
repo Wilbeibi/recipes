@@ -88,19 +88,7 @@ stdout_logfile=/var/log/test1.log
 + [homebrew-cask-upgrade](https://github.com/buo/homebrew-cask-upgrade)
 + [Fliqlo: Mac 时钟壁纸](https://fliqlo.com)
 + [PodcastMenu: Overcast on Mac](https://github.com/insidegui/PodcastMenu)
-## ZSH
-+ `cd /u/l/b`: path expansion
-+ `cd site1 site2`: path replacement, if you were in /srv/www/site1/current/log, it will go to /srv/www/site2/current/log via this command
-+ `ls -l **/*.log`: extended globbing, **/ = recursive
-+ `zmv '(*).txt' 'template_$1.html'`: rename files
-+ `ls -l zsh_demo/**/*(. Lm-2 mh-1 om)`: ls files under zsh_demo recursively, `Lm-2` for less than 2mb (similarly, `Lm+30` for over 30mb, m for megabytes, k for kilobytes, or nothing for just bytes), `mh-1` for files modified in the last hour (M for Months, w for weeks, h for hours, m for minutes, and s for seconds), `om` to o(rder) by modification date, o for most recent, O vise versa, m for modification date, or L to sort by size.
-+ <kbd>Ctrl</kbd> + <kbd>X</kbd> + <kbd>Ctrl</kbd> + <kbd>E</kbd>  to edit long command
-+ [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md), → to complete
 
-+ [Master Your Z Shell with These Outrageously Useful Tips](http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/)
-+ `sh -c "$(wget https://example.com/execute.sh -0 -)"`: download and execute command
-+ <kbd>⌘</kbd> + <kbd>.</kbd>: recall the last argument of any of the previous commands
-+ theme: spaceship, font: 14pt Fira Mono for Powerline
 ## iTerm2
 + [delete world/line in iTerm2](https://coderwall.com/p/ds2dha/word-line-deletion-and-navigation-shortcuts-in-iterm2): deleting a word: 0x17, deleting a line: 0x15
 + `Preference/Advanced`, search `Tabs`, select `Add new tabs at the end of the tab bar, not next to current tab` as `No`
@@ -108,44 +96,6 @@ stdout_logfile=/var/log/test1.log
 ## Dash
 + "Third-party sources" -> "Go Docsets", can add open source godocs
 
-## Git
-### Clean commits [ref](https://about.gitlab.com/2018/06/07/keeping-git-commit-history-clean/)
-#### Change most recent commit
-+ `git add file_to_change.go`
-+ `git commit --amend` to amend changes in stage to most recent commit
-+ `git push --force-with-lease <remote_name> <branch_name>` to push (about [--force-with-lease](https://developer.atlassian.com/blog/2015/04/force-with-lease/))
-#### Change a specific commit
-+ `git rebase -i <one commit before the one to modify>`, then in interactive editor, change first `pick <commit to modify> <description>` to `edit <commit to modify> <description>`
-+ modify file_to_change.go, `git add file_to_change.go`
-+ `git rebase --continue`
-+ `git push --force-with-lease <remote_name> <branch_name>`
-#### Add, remove, or combine commits
-+ `git rebase -i <commit>`
-+ change `pick` to `squash`(keeps the commits messages in the description), `fixup`(forget the commit messages of the fixes and keep the original) or `drop`(delete that commit)
-### Delete branches [ref](https://stackoverflow.com/a/46412667/1035859)
-+ `git push origin --delete <branch_name>`: delete remote branch
-+ `git branch -D <branch>`: delete local branch
-### config per repository [ref](https://stackoverflow.com/questions/18181439/git-different-config-for-different-repository)
-### Change commit author
-+ `git commit --amend --author="Author Name <email@address.com>"`
-### git gc is bad, use repack instead
-+ `git repack -a -d --depth=250 --window=250` [refer Linus](http://gcc.gnu.org/ml/gcc/2007-12/msg00165.html)
-### store credentials
-+ `git config credential.helper store` to avoid keep been asked for username and password
-### git console show non-ascii path name
-+ `git config --global core.quotepath off`, [refer](https://stackoverflow.com/a/22828826/1035859)
-### update upstream from forked repo
-+ `git remote add upstream <original repo>.git`
-+ `git pull upstream master --rebase`
-+ Always `git pull --rebase`: [refer](https://coderwall.com/p/yf5-0w/like-git-pull-rebase-make-it-default)
-### global gitignore
-+ `git config --global core.excludesfile ~/.gitignore` ('.vscode', '.idea', '.DS_Store')
-### stash recipes
-+ `git stash save <msg>`: save a stash with a message
-+ `git stash -u/--include-untracked`: save untracked files
-+ `git stash -p/--patch`: stash just a single file
-+ `git stash show -p` show a stash or `git stash show` view the latest stash
-+ `gits stash drop <stash_id>` or `git stash clear` to remove stash(s)
 ## Perf
 + [fio: Flexible I/O Tester](https://github.com/axboe/fio)
 + [filebench: generated storage benchmark workloads](https://github.com/filebench/filebench/wiki)
