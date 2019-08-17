@@ -52,6 +52,11 @@
 + <kbd>Shift</kbd> + <kbd>fn</kbd> + <kbd>Delete</kbd> Delete address bar suggestion
 + "chrome://flags" allow tab groups
 
+## Firefox
++ "%<keyword>" in address bar to search in open tabs
+### Plugins
++ [Play/Pause](https://addons.mozilla.org/en-US/firefox/addon/play-pause)
+
 # Supervisord
 ```
 # /etc/supervisor/conf.d/*.conf
