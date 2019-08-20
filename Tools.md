@@ -2,7 +2,7 @@
 + Multiple cursor: <kbd>Alt</kbd> + <kbd>Shift</kbd> + mouse click
 + Dash: <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>
 + Peek Definition: <kbd>⌘</kbd> + <kbd>Y</kbd>
-
++ `Save Actions`: format on save
 ## VSCode
 + <kbd>Ctrl</kbd> + <kbd>Tab</kbd> to switch tabs, <kbd>⌘</kbd> + <kbd>Tab</kbd> + LEFT/RIGHT
 + Multiple cursor: <kbd>Alt</kbd> + <kbd>Shift</kbd> + mouse click
