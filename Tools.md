@@ -3,6 +3,10 @@
 + Dash: <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>
 + Peek Definition: <kbd>⌘</kbd> + <kbd>Y</kbd>
 + `Save Actions`: format on save
++ Move Caret to Code Block End/Start: <kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>[</kbd> / <kbd>]</kbd>
++ Go to line: <kbd>⌘</kbd> + <kbd>L</kbd>
++ Jump to definition: <kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>B</kbd>
+
 ## VSCode
 + <kbd>Ctrl</kbd> + <kbd>Tab</kbd> to switch tabs, <kbd>⌘</kbd> + <kbd>Tab</kbd> + LEFT/RIGHT
 + Multiple cursor: <kbd>Alt</kbd> + <kbd>Shift</kbd> + mouse click

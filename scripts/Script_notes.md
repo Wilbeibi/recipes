@@ -1,5 +1,5 @@
 ## Tips 
-- `git ls-files | xargs cloc`: Count lines of code in git repo
+- [deprecated]`git ls-files | xargs cloc`: Count lines of code in git repo
 - `twistd -n ftp -r ./`: FTP server on port 2121; `twistd -n web -p 8080 --path .`: web server on port 8080 (`twistd -n -h` for more services like ssh, dns, mail, socks)
 - `watch -n 0 <command>`: run any command every 0.1s
 - `rsync -abviuzP src/ dest/` from https://superuser.com/a/547316/173890
@@ -48,7 +48,8 @@
 - [ncdu](https://dev.yorhel.nl/ncdu): check disk usage interactively
 - [moreutils: the utilities package every UNIX/Linux/Mac OS developer should know](https://rentes.github.io/unix/utilities/2015/07/27/moreutils-package/)
 - [rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc](https://phiresky.github.io/blog/2019/rga--ripgrep-for-zip-targz-docx-odt-epub-jpg/)
-
+- double dash in command signify the end of command options [ref](signify the end of command options)
+- [just](https://github.com/casey/just): makefile better alternative, can used to save recipes as well
 ## ZSH
 + `cd /u/l/b`: path expansion
 + `cd site1 site2`: path replacement, if you were in /srv/www/site1/current/log, it will go to /srv/www/site2/current/log via this command
@@ -114,6 +115,9 @@
 + `git stash -p/--patch`: stash just a single file
 + `git stash show -p` show a stash or `git stash show` view the latest stash
 + `gits stash drop <stash_id>` or `git stash clear` to remove stash(s)
+### alias
++ `lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit`
++ `hl =  "!f() { git log --pretty=short -u -L \"$1\",\"$1\":\"$2\"; }; f"`
 
 ## ripgrep & silver searcher
 - `rg -F -e` to search literal string
