@@ -6,6 +6,7 @@
 + Move Caret to Code Block End/Start: <kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>[</kbd> / <kbd>]</kbd>
 + Go to line: <kbd>⌘</kbd> + <kbd>L</kbd>
 + Jump to definition: <kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>B</kbd>
++ `Tools | Create Command-line Launcher` to allow launch `clion` command
 
 ## VSCode
 + <kbd>Ctrl</kbd> + <kbd>Tab</kbd> to switch tabs, <kbd>⌘</kbd> + <kbd>Tab</kbd> + LEFT/RIGHT
@@ -58,6 +59,8 @@
 
 ## Firefox
 + "%<keyword>" in address bar to search in open tabs
++ <kbd>⌘</kbd> + N to Nth tab (N [1,8]), <kbd>⌘</kbd> + 9 to the last tab
++ <kbd>⌘</kbd> + <kbd>+</kbd>/<kbd>-</kbd> to zoom page
 ### Plugins
 + [Play/Pause](https://addons.mozilla.org/en-US/firefox/addon/play-pause)
 
@@ -92,7 +95,7 @@ stdout_logfile=/var/log/test1.log
 + [homebrew-cask-upgrade](https://github.com/buo/homebrew-cask-upgrade)
 + [Fliqlo: Mac 时钟壁纸](https://fliqlo.com)
 + [PodcastMenu: Overcast on Mac](https://github.com/insidegui/PodcastMenu)
-
++ [Pock: Display macOS Dock in Touch Bar](https://github.com/pigigaldi/Pock)
 ## iTerm2
 + [delete world/line in iTerm2](https://coderwall.com/p/ds2dha/word-line-deletion-and-navigation-shortcuts-in-iterm2): deleting a word: 0x17, deleting a line: 0x15
 + `Preference/Advanced`, search `Tabs`, select `Add new tabs at the end of the tab bar, not next to current tab` as `No`
