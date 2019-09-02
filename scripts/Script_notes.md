@@ -41,7 +41,7 @@
     to the immediate left of the `&`, should simply run in the background
 - `dig -t A wilbeibi.com +trace` trace DNS resolve
 - `vim scp://user@server/~/data.txt`: edit file on remote server
--  `tr : '\n' <<<$PATH`: show directories in PATH, one per line (`<<<` for redirects the string to stdin of the command), or `echo $PATH|tr ":" "\n"`
+-  `echo $PATH|tr ":" "\n"`: show directories in PATH, one per line 
 - `ssh -L 80:localhost:8080 remotehost`: browser visit localhost:80 is actually get response from remotehost:8080
 - `ssh -R 8080:localhost:80 remotehost`: vice versa
 - [ssh jump host config](https://gist.github.com/wilbeibi/1505fcd81f7376cdd91cd370d2dd9204)
