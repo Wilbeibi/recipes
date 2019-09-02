@@ -57,12 +57,12 @@
 + `zmv '(*).txt' 'template_$1.html'`: rename files
 + `ls -l zsh_demo/**/*(. Lm-2 mh-1 om)`: ls files under zsh_demo recursively, `Lm-2` for less than 2mb (similarly, `Lm+30` for over 30mb, m for megabytes, k for kilobytes, or nothing for just bytes), `mh-1` for files modified in the last hour (M for Months, w for weeks, h for hours, m for minutes, and s for seconds), `om` to o(rder) by modification date, o for most recent, O vise versa, m for modification date, or L to sort by size.
 + <kbd>Ctrl</kbd> + <kbd>X</kbd> + <kbd>Ctrl</kbd> + <kbd>E</kbd>  to edit long command
++ `repeat 10 {echo 'Hello'}`: run command 10 times, `repeat` is zsh specific command
 + [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md), → to complete
 + [Master Your Z Shell with These Outrageously Useful Tips](http://reasoniamhere.com/2014/01/11/outrageously-useful-tips-to-master-your-z-shell/)
 + `sh -c "$(wget https://example.com/execute.sh -0 -)"`: download and execute command
 + <kbd>⌘</kbd> + <kbd>.</kbd>: recall the last argument of any of the previous commands
 + theme: spaceship, font: 14pt Fira Mono for Powerline
-
 ## jq
 - `jq`: 'fromjson' to unescape, 'tojson' to escape when parsing
 
@@ -76,6 +76,9 @@
 + `git clean -fXd` to remove untracked files and directories [ref](https://stackoverflow.com/a/64966/1035859)
 + `git fetch origin; git rebase -i origin/master; git push --force-with-lease origin dev` in dev branch to rebase from master
 + `git commmit --fixup <fix to which commit>` and `git rebase -i --autosquash <prev commit>`, refer [fixup and autosquash](https://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html)
++ `git checkout -` switch to previous used branch
+### Worktree (multi branch access)
++ git worktree add **path** **branch**, **path** is new path to store "mirror" of repo
 ### `tig` interactive commits viewer in cli
 + [manual](https://jonas.github.io/tig/)
 ### Clean commits [ref](https://about.gitlab.com/2018/06/07/keeping-git-commit-history-clean/)
@@ -115,6 +118,9 @@
 + `git stash -p/--patch`: stash just a single file
 + `git stash show -p` show a stash or `git stash show` view the latest stash
 + `gits stash drop <stash_id>` or `git stash clear` to remove stash(s)
+### diff & patch [refer](https://stackoverflow.com/a/4610846/1035859)
++ `git diff > save.patch`, `patch -p1 < save.patch`
++ Or `git diff --no-prefix > save.patch`, `patch -p0 < save.patch`
 ### alias
 + `lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit`
 + `hl =  "!f() { git log --pretty=short -u -L \"$1\",\"$1\":\"$2\"; }; f"`

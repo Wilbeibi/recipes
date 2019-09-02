@@ -99,6 +99,8 @@ stdout_logfile=/var/log/test1.log
 ## iTerm2
 + [delete world/line in iTerm2](https://coderwall.com/p/ds2dha/word-line-deletion-and-navigation-shortcuts-in-iterm2): deleting a word: 0x17, deleting a line: 0x15
 + `Preference/Advanced`, search `Tabs`, select `Add new tabs at the end of the tab bar, not next to current tab` as `No`
++ <kbd>⌘</kbd> +d <kbd>d</kbd> to split pane vertically,
++ <kbd>⌘</kbd> + <kbd>[</kbd> /<kbd>]</kbd> to focus on either one
 
 ## Dash
 + "Third-party sources" -> "Go Docsets", can add open source godocs
