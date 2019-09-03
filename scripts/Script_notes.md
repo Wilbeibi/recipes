@@ -19,6 +19,7 @@
 - `curl -w "TCP handshake: %{time_connect}， SSL handshake: %{time_appconnect}\n" -so /dev/null https://www.google.com`
     - HTTP time: TCP handshake
     - HTTPS time: TCP handshake + SSL handshake
+- [Curl Cookbook](https://catonmat.net/cookbooks/curl)
 - `pv`: "pipe viewer", show stats on data going through a pipe
 - `sed s/foo/bar/g file.txt`, `foo` can be a regular expression
     - GNU and BSD sed behaviors differently in `-i`, so [always use](https://stackoverflow.com/a/22084103/1035859) `-i.bak`
