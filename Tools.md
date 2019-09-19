@@ -7,7 +7,8 @@
 + Go to line: <kbd>⌘</kbd> + <kbd>L</kbd>
 + Jump to definition: <kbd>⌥</kbd><kbd>⌘</kbd> + <kbd>B</kbd>
 + `Tools | Create Command-line Launcher` to allow launch `clion` command
-
++ copy file path: <kbd>⇧</kbd> + <kbd>⌘</kbd> + <kbd>C</kbd>
++ missing cursor: [refer](https://github.com/baskerville/bspwm/issues/841#issuecomment-419708176) and switch tabs
 ## VSCode
 + <kbd>Ctrl</kbd> + <kbd>Tab</kbd> to switch tabs, <kbd>⌘</kbd> + <kbd>Tab</kbd> + LEFT/RIGHT
 + Multiple cursor: <kbd>Alt</kbd> + <kbd>Shift</kbd> + mouse click
