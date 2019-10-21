@@ -64,7 +64,11 @@
 + <kbd>⌘</kbd> + <kbd>+</kbd>/<kbd>-</kbd> to zoom page
 ### Plugins
 + [Play/Pause](https://addons.mozilla.org/en-US/firefox/addon/play-pause)
-
++ [Vimium](https://github.com/philc/vimium)
+    + `b`: search in bookmarks
+    + `T`: sarch in open tabs
+    + `O`: Open URL, bookmark or history entry in a new tab
+    
 # Supervisord
 ```
 # /etc/supervisor/conf.d/*.conf
