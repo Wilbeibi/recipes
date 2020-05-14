@@ -34,6 +34,7 @@
     - `v` to edit file, `F` to keep reading as updated
     - `less +F` follow updates, `less +G` start 20% into file, `less +/foo` search for 'foo'
 - [bat](https://github.com/sharkdp/bat): `alias lessy=bat -l yaml -p` as less alternative for yaml
+- [terminal-notifier](https://github.com/julienXX/terminal-notifier): send notification from terminal
 - `fc`: fix command, open the last command you ran in an editor, and rerun
 - `date -u`: show UTC time now
 - `set -x` enables a mode of the shell where all executed commands are printed to the terminal
