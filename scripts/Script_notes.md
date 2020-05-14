@@ -52,6 +52,8 @@
 - [rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc](https://phiresky.github.io/blog/2019/rga--ripgrep-for-zip-targz-docx-odt-epub-jpg/)
 - double dash in command signify the end of command options [ref](signify the end of command options)
 - [just](https://github.com/casey/just): makefile better alternative, can used to save recipes as well
+- [asciinema](https://asciinema.org/): recording terminal sessions
+- [ffsend](https://github.com/timvisee/ffsend): Firefox Send client
 ## ZSH
 + `cd /u/l/b`: path expansion
 + `cd site1 site2`: path replacement, if you were in /srv/www/site1/current/log, it will go to /srv/www/site2/current/log via this command
